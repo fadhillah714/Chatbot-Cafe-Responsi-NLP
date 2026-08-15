@@ -1,0 +1,798 @@
+        :root{
+            --cerulean:#217CA3;
+            --mustard:#E29930;
+            --asphalt:#32384D;
+            --shadow:#211F30;
+            --cream:#F7F1E4;
+            --paper:var(--cream);
+            --ink:var(--asphalt);
+            --header-bg:#f5e7ce;
+
+            /* Dipromosikan dari literal hardcoded supaya bisa di-override per
+               tema (lihat body[data-theme="dark"/"playful"] di bawah). */
+            --navy:#123A52;
+            --surface:#ffffff;
+            --ink-rgb:50, 56, 77;
+            --on-accent:#FBF7F0;
+
+            /* Versi RGB --cerulean -- dibutuhkan supaya bisa dipakai di dalam
+               rgba() (mis. pill kategori Kopi/Non-Kopi/Makanan). Sebelumnya
+               pill itu literal rgba(33,124,163,X) langsung, tidak ikut tema. */
+            --cerulean-rgb:33, 124, 163;
+
+            /* Tint avatar -- SENGAJA dipisah dari --mustard/--cerulean dasar
+               (bukan alias-nya) supaya bisa diberi treatment beda di dark
+               mode tanpa ikut mengubah stepper/header kategori/judul
+               "Pesanan" yang sudah pakai --mustard/--cerulean langsung dan
+               sudah dikonfirmasi bagus. Nilai di sini = nilai literal yang
+               SEBELUMNYA dipakai langsung di .avatar / .row.user .avatar. */
+            --avatar-mustard:rgba(226,153,48,.45);
+            --avatar-cerulean:rgba(33,124,163,.35);
+
+            /* Teks harga item ("Rp x.000") -- sebelumnya color:var(--asphalt)
+               + opacity:.7 (bukan literal, tapi tetap butuh titik override
+               eksplisit sendiri per tema karena opacity generik tidak selalu
+               cukup terang di atas --surface gelap). */
+            --ink-muted:rgba(50,56,77,.7);
+
+            /* Box "Pesanan" -- sebelumnya literal rgba(mustard/.., X) langsung
+               di .menu-pesanan-box, dipisah dari --mustard dasar (pola sama
+               dengan --avatar-*) supaya bisa dibuat lebih vivid khusus dark
+               tanpa ikut mengubah elemen lain yang pakai --mustard langsung. */
+            --pesanan-bg:rgba(226,153,48,.45);
+            --pesanan-border:rgba(180,115,25,.55);
+
+            /* Judul "Pesanan" -- SENGAJA variable terpisah (bukan reuse
+               --cerulean/--mustard langsung): arah warnanya BERBEDA per tema
+               (tukar hue, bukan cuma dicerahkan) -- Normal biru (kontras dari
+               bg mustard box-nya), Dark tetap mustard (dilaporkan sudah
+               kontras cukup, jangan ikut ditukar biru). */
+            --pesanan-title-color:#217CA3;
+
+            /* Ikon (linework) avatar bot -- SENGAJA variable terpisah dari
+               --pesanan-title-color meski nilainya sama sekarang, supaya
+               avatar & judul "Pesanan" bisa diubah independen nanti kalau
+               salah satunya perlu di-tuning ulang. Sama seperti --pesanan-
+               title-color: arah warnanya tukar hue per tema, bukan cuma
+               dicerahkan -- Normal biru, Dark tetap mustard. */
+            --avatar-bot-icon:#217CA3;
+        }
+
+        /* ---------- TEMA: Dark & Playful ---------- */
+        /* Normal = nilai default di :root di atas (tidak diubah). Dua blok
+           ini HANYA meng-override variable warna -- tidak ada perubahan
+           struktur/layout apa pun di sini. Selector WAJIB html[data-theme]
+           (bukan body[data-theme]) -- lihat komentar di applyTheme() (JS):
+           html itu sendiri = :root, jadi override harus hidup di situ juga,
+           bukan cuma di <body>, supaya "html,body{background:var(--cream)}"
+           konsisten di kedua elemen. */
+        html[data-theme="dark"]{
+            --cream:#1B1E2B;
+            --paper:#1B1E2B;
+            --mustard:#F0A93E;
+            --cerulean:#4FB3DA;
+            --asphalt:#EDE7DA;
+            --ink:#EDE7DA;
+            --shadow:#0E1018;
+            --header-bg:#232838;
+            --navy:#8FC1E3;
+            --surface:#3A4359;
+            --ink-rgb:237, 231, 218;
+            --on-accent:#1B1E2B;
+            --avatar-mustard:rgba(240,169,62,.40);
+            --avatar-cerulean:rgba(79,179,218,.40);
+            --ink-muted:#B9B4A6;
+            --pesanan-bg:rgba(240,169,62,.38);
+            --pesanan-border:rgba(240,169,62,.65);
+            --pesanan-title-color:var(--mustard);
+            --avatar-bot-icon:var(--mustard);
+            --cerulean-rgb:79, 179, 218;
+        }
+
+        html[data-theme="playful"]{
+            /* Background & header dibuat PASTEL (dicampur ~70% putih) --
+               menyimpang sedikit dari konsep Venice awal (yang lebih
+               saturated), disengaja untuk menaikkan kontras avatar user/bot
+               yang sebelumnya nyaris menyatu dengan bg Rosa pekat. Literal di
+               atas color-mix() adalah fallback untuk browser tanpa dukungan
+               color-mix() -- nilainya persis hasil hitungan color-mix di
+               bawahnya, jadi TIDAK ada lompatan warna kalau fallback dipakai. */
+            --cream:#FBE6E2;
+            --cream:color-mix(in srgb, #F2AD9F 30%, white 70%);
+            --paper:#FBE6E2;
+            --paper:color-mix(in srgb, #F2AD9F 30%, white 70%);
+            --mustard:#F26968;
+            --cerulean:#6CBF84;
+            --asphalt:#323339;
+            --ink:#323339;
+            --shadow:#202124;
+            --header-bg:#F8DAD3;
+            --header-bg:color-mix(in srgb, #EEA290 40%, white 60%);
+            --navy:#375F42;
+            --surface:#ffffff;
+            --ink-rgb:50, 51, 57;
+            --on-accent:#FBF7F0;
+            --cerulean-rgb:108, 191, 132;
+            --avatar-mustard:rgba(242,105,104,.45);
+            --avatar-cerulean:rgba(108,191,132,.35);
+            --avatar-bot-icon:var(--mustard);
+            --pesanan-bg:rgba(242,105,104,.38);
+            --pesanan-border:rgba(242,105,104,.65);
+            /* Disamakan dengan warna judul "Cafebot" di header (Playful) --
+               keduanya sama-sama var(--mustard) = #F26968 di tema ini. */
+            --pesanan-title-color:var(--mustard);
+        }
+
+        *{ box-sizing:border-box; }
+
+        html{
+            scrollbar-width:thin;               /* Firefox */
+            scrollbar-color:var(--asphalt) transparent;
+        }
+        ::-webkit-scrollbar{ width:6px; }
+        ::-webkit-scrollbar-track{ background:transparent; }
+        ::-webkit-scrollbar-thumb{ background:rgba(var(--ink-rgb),.25); border-radius:10px; }
+
+        html,body{
+            margin:0;
+            background:var(--cream);
+            font-family:'Times New Roman', Times, Georgia, serif;
+            color:var(--ink);
+        }
+
+        /* body TIDAK punya overflow/tinggi tetap -- html/body sendiri yang scroll,
+           jadi scrollbar bawaan browser nempel di tepi kanan VIEWPORT, bukan di
+           tepi kartu tengah. padding-top/bottom di-set via JS supaya konten tidak
+           ketutupan header/footer yang sekarang fixed. */
+
+        /* ---------- HEADER (fixed terhadap viewport) ---------- */
+        /* Minimalis ala Google Search: krem cerah + garis tipis tegas,
+           bukan lagi kanopi gelap atau fade blur. */
+        header{
+            position:fixed;
+            top:0; left:0; right:0;
+            z-index:20;
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            padding:22px 28px;
+            background:var(--header-bg);
+            border-bottom:1px solid #B8AD9B;
+            border-bottom:1px solid color-mix(in srgb, var(--header-bg) 75%, black);
+        }
+
+        header .brand{
+            font-weight:700;
+            font-size:26px;
+            color:var(--ink);
+            letter-spacing:.2px;
+        }
+
+        /* Khusus Playful -- preferensi visual, bukan soal kontras/bug (--ink
+           playful sudah benar & terbaca di atas bg Rosa). Normal & Dark TIDAK
+           disentuh. Sempat putih, diganti Ruby Grapefruit supaya lebih
+           menyatu dengan aksen tema setelah bg/header dibuat pastel. */
+        html[data-theme="playful"] header .brand{
+            color:#F26968;
+        }
+
+        /* Pill toggle tema -- bg & teks/ikon reuse persis variable widget
+           "Pesanan" (--pesanan-bg, --pesanan-title-color). Border SENGAJA
+           pakai --mustard langsung (bukan --pesanan-title-color) -- di Dark
+           & Playful nilainya kebetulan sama (pesanan-title-color di kedua
+           tema itu = var(--mustard) juga), tapi di Normal beda: --mustard
+           oranye, --pesanan-title-color biru. Border dibuat ikut --mustard
+           supaya Normal konsisten oranye seperti Dark/Playful, sekalipun
+           teks/ikonnya sendiri tetap biru. */
+        header .status{
+            display:inline-flex;
+            align-items:center;
+            justify-content:center;
+            gap:8px;
+            width:150px;
+            padding:6px 14px;
+            border-radius:999px;
+            font-size:13px;
+            font-weight:700;
+            font-family:inherit;
+            white-space:nowrap;
+            cursor:pointer;
+            background:var(--pesanan-bg);
+            border:1px solid var(--mustard);
+            color:var(--pesanan-title-color);
+            transform:none;
+            transition:filter .15s ease, background-color .15s ease, border-color .15s ease;
+        }
+
+        /* KHUSUS badge ini -- TIDAK ikut pola umum "filled hover" proyek
+           (brightness + scale(1.05)). Ukurannya harus rigid: tidak boleh
+           membesar/mengecil sama sekali, baik hover maupun ditekan --
+           supaya lebar (poin di atas) benar-benar konstan di mata pengguna. */
+        header .status:hover{ filter:brightness(1.12); }
+        header .status:active{ transform:none; }
+
+        header .status .theme-icon{
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            width:16px;
+            height:16px;
+            flex-shrink:0;
+        }
+
+        header .status .theme-icon svg{
+            width:16px;
+            height:16px;
+            stroke:currentColor;
+        }
+
+        header .status .theme-label{
+            display:inline-block;
+        }
+
+        /* Overlay fade untuk pesan yang lewat DI BAWAH garis header -- pola
+           persis sama dengan .bottom-fade (elemen DOM asli, bukan
+           pseudo-element/mask, supaya konsisten reliable). --header-height
+           di-set dari JS (headerEl.offsetHeight) supaya selalu pas walau
+           tinggi header berubah (mis. media query mobile). */
+        .top-fade{
+            position:fixed;
+            left:0; right:0;
+            top:var(--header-height, 64px);
+            height:36px;
+            background:linear-gradient(to bottom, var(--paper), transparent);
+            pointer-events:none;
+            z-index:5;      /* di atas pesan (auto), di bawah header (20) */
+        }
+
+        /* ---------- CHAT COLUMN ---------- */
+        /* Lebih lebar dari .composer (880 vs 620) dengan sengaja -- supaya
+           percakapan "bernapas" lebih dekat ke tepi layar, sementara kotak
+           input tetap ramping/terpusat di bawahnya. */
+        .chat-column{
+            max-width:1040px;
+            margin:0 auto;
+            padding:24px 24px;
+            display:flex;
+            flex-direction:column;
+            gap:18px;
+        }
+
+        .row{
+            display:flex;
+            flex-direction:column;
+            max-width:78%;
+        }
+
+        .row.user{
+            align-self:flex-end;
+            align-items:flex-end;
+        }
+
+        .row.bot{
+            align-self:flex-start;
+            align-items:flex-start;
+        }
+
+        .bubble{
+            padding:16px 20px;
+            font-size:16.5px;
+            line-height:1.5;
+            box-shadow:0 2px 10px rgba(var(--ink-rgb),.06);
+        }
+
+        /* Sudut yang menghadap avatar (bawah, ke arah meta row) dibuat lancip;
+           sudut-sudut lain tetap 20px seperti sebelumnya. */
+        .row.bot .bubble{
+            background:var(--surface);
+            color:var(--ink);
+            border-radius:20px 20px 20px 2px;
+        }
+
+        .row.user .bubble{
+            background:var(--cerulean);
+            color:var(--on-accent);
+            border-radius:20px 20px 2px 20px;
+        }
+
+        .meta{
+            display:flex;
+            align-items:center;
+            gap:8px;
+            margin-top:8px;
+            font-size:12.5px;
+            font-style:italic;
+            color:var(--asphalt);
+            opacity:.78;
+        }
+
+        .row.user .meta{
+            flex-direction:row-reverse;
+        }
+
+        .avatar{
+            width:28px;
+            height:28px;
+            border-radius:50%;
+            background:var(--avatar-mustard);
+            color:var(--avatar-bot-icon);
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            flex-shrink:0;
+        }
+
+        .avatar svg{
+            width:15px;
+            height:15px;
+        }
+
+        .row.user .avatar{
+            background:var(--avatar-cerulean);
+            color:var(--cerulean);
+        }
+
+        /* ---------- TYPING INDICATOR ---------- */
+        .typing-dots{
+            display:inline-flex;
+            gap:4px;
+            padding:4px 2px;
+        }
+
+        .typing-dots span{
+            width:6px;
+            height:6px;
+            border-radius:50%;
+            background:var(--asphalt);
+            opacity:.35;
+            animation:typing-bounce 1.1s infinite ease-in-out;
+        }
+
+        .typing-dots span:nth-child(2){ animation-delay:.15s; }
+        .typing-dots span:nth-child(3){ animation-delay:.3s; }
+
+        @keyframes typing-bounce{
+            0%, 60%, 100%{ transform:translateY(0); opacity:.35; }
+            30%{ transform:translateY(-4px); opacity:.8; }
+        }
+
+        /* ---------- COMPOSER (fixed & mengapung) ---------- */
+        footer{
+            position:fixed;
+            bottom:0; left:0; right:0;
+            z-index:20;
+            padding:16px 28px 26px;
+        }
+
+        /* Overlay fade SUNGGUHAN (bukan pseudo-element) -- ::before sebelumnya
+           gagal render dengan andal. Elemen DOM asli, lebar penuh, di BAWAH
+           composer secara z-index, jadi backdrop+fade selalu tampil konsisten
+           di seluruh lebar viewport, bukan cuma di balik pil 620px. */
+        .bottom-fade{
+            position:fixed;
+            left:0; right:0; bottom:0;
+            height:110px;
+            background:linear-gradient(to top, var(--paper) 35%, transparent 100%);
+            pointer-events:none;
+            z-index:5;
+        }
+
+        /* Composer sengaja LEBIH RAMPING dari .chat-column (620 vs 880) --
+           kotak input terpusat, sementara bubble percakapan lebih lebar. */
+        .composer{
+            position:relative;
+            z-index:6;
+            max-width:620px;
+            margin:0 auto;
+        }
+
+        .composer form{
+            display:flex;
+            align-items:flex-end;
+            gap:10px;
+            background:var(--surface);
+            border-radius:999px;
+            padding:8px 8px 8px 20px;
+            box-shadow:0 8px 24px rgba(var(--ink-rgb),.12);
+            transition:border-radius .15s ease;
+        }
+
+        .composer form.multiline{
+            border-radius:26px;
+        }
+
+        textarea#input{
+            flex:1;
+            border:none;
+            outline:none;
+            background:transparent;
+            font-family:inherit;
+            font-size:16.5px;
+            color:var(--ink);
+            padding:10px 0;
+            resize:none;
+            max-height:120px;
+            line-height:1.4;
+        }
+
+        textarea#input::placeholder{
+            color:var(--asphalt);
+            opacity:.45;
+            font-style:italic;
+        }
+
+        /* Default: abu-abu netral, non-aktif (field kosong / ordering
+           berjalan / menunggu balasan bot). Mustard hanya saat .is-ready. */
+        button#send-btn{
+            flex-shrink:0;
+            width:44px;
+            height:44px;
+            border-radius:50%;
+            border:none;
+            background:color-mix(in srgb, var(--ink) 15%, var(--surface) 85%);
+            color:var(--asphalt);
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            cursor:default;
+            transition:opacity .15s ease, transform .1s ease, background-color .15s ease, color .15s ease;
+        }
+
+        button#send-btn.is-ready{
+            background:var(--mustard);
+            color:var(--on-accent);
+            cursor:pointer;
+        }
+
+        button#send-btn:hover{ opacity:.9; }
+        button#send-btn:active{ transform:scale(.94); }
+        button#send-btn:disabled{ opacity:.5; cursor:default; }
+
+        button#send-btn svg{ width:18px; height:18px; }
+
+        @media (max-width:480px){
+            header{ padding:18px 18px; }
+            .chat-column{ padding:20px 16px; }
+            footer{ padding:12px 16px 20px; }
+            .row{ max-width:88%; }
+        }
+
+        /* ================================================================
+           WIDGET MENU & PEMBAYARAN -- konten TAMBAHAN di dalam .bubble yang
+           sudah ada (desain bubble/warna/font tidak diubah sama sekali,
+           ini murni style baru untuk konten interaktif di dalamnya).
+           ================================================================ */
+        .widget-box{
+            display:flex;
+            flex-direction:column;
+            gap:14px;
+            min-width:260px;
+        }
+
+        .widget-box.frozen{
+            opacity:.55;
+            pointer-events:none;
+        }
+
+        .menu-section-title{
+            font-weight:700;
+            font-size:13px;
+            letter-spacing:1px;
+            text-transform:uppercase;
+            color:var(--cerulean);
+        }
+
+        /* Modifier KHUSUS judul "Pesanan" (box order aktif) -- BUKAN "Ringkasan
+           Pesanan" (ringkasan read-only setelah "Pesan Sekarang"), yang tetap
+           pakai .menu-section-title polos/cerulean seperti sebelumnya. */
+        .menu-pesanan-title{
+            color:var(--pesanan-title-color);
+        }
+
+        /* Modifier KHUSUS 3 judul kategori (Kopi/Non-Kopi/Makanan) -- bukan
+           "Pesanan"/"Ringkasan Pesanan" yang tetap pakai .menu-section-title
+           polos seperti sebelumnya. Warna teks navy gelap (bukan --ink/
+           --shadow yang cokelat-asphalt) -- senada cerulean tapi lebih
+           pekat, supaya kontras jelas di atas bg cerulean transparan ini. */
+        .menu-category-title{
+            background:rgba(var(--cerulean-rgb),.35);
+            border:1px solid rgba(var(--cerulean-rgb),.55);
+            border-radius:8px;
+            text-align:center;
+            padding:6px 12px;
+            margin:14px 0 8px;
+            color:var(--navy);
+            font-weight:700;
+        }
+
+        /* .menu-item-row sekarang pembungkus BLOCK (bukan flex langsung) --
+           supaya bisa menampung 2 anak bertumpuk: baris utama (nama/harga/
+           stepper) + panel deskripsi opsional di bawahnya. Tata letak flex
+           yang lama dipindah ke .menu-item-row-main, jadi baris tanpa
+           deskripsi tetap terlihat identik seperti sebelumnya. */
+        .menu-item-row{
+            padding:6px 0;
+            border-bottom:1px solid rgba(var(--ink-rgb),.08);
+        }
+
+        .menu-item-row:last-child{ border-bottom:none; }
+
+        .menu-item-row-main{
+            display:flex;
+            align-items:center;
+            justify-content:space-between;
+            gap:12px;
+        }
+
+        .menu-item-name-wrap{
+            display:flex;
+            align-items:center;
+            gap:6px;
+            flex:1;
+            min-width:0;
+        }
+
+        /* Grup {stepper, tombol (?)} -- satu kelompok visual rapat di ujung
+           kanan baris, terpisah dari .stepper supaya tombol (?) tidak
+           tertimpa selector ".stepper button" (lihat komentar di JS). */
+        .menu-item-actions{
+            display:flex;
+            align-items:center;
+            gap:6px;
+            flex-shrink:0;
+        }
+
+        /* Tombol (?) -- kotak sudut halus, putih/outline (treatment senada
+           .btn-outline), menempel di ujung kanan baris (satu kelompok visual
+           dengan stepper). Hanya pernah dirender di daftar kategori (showInfo
+           di Pesanan selalu false), jadi tidak perlu scoping tambahan.
+           Murni informatif: tidak menyentuh qty/renderBody sama sekali. */
+        .menu-info-btn{
+            width:22px;
+            height:22px;
+            border-radius:5px;
+            background:var(--surface);
+            border:1px solid rgba(var(--ink-rgb),.18);
+            color:var(--mustard);
+            display:flex;
+            align-items:center;
+            justify-content:center;
+            font-family:inherit;
+            font-size:13px;
+            cursor:pointer;
+            flex-shrink:0;
+            transition:transform .15s ease, background-color .15s ease, border-color .15s ease;
+        }
+
+        .menu-info-btn:hover{
+            background-color:rgba(var(--ink-rgb),.07);
+            border-color:rgba(var(--ink-rgb),.22);
+            transform:scale(1.05);
+        }
+
+        /* Popup deskripsi -- mengambang (position:fixed), TIDAK mendorong
+           layout baris lain. Posisi (kanan/kiri/atas/bawah tombol) dihitung
+           di JS saat popup dibuka, supaya selalu aman dari tepi viewport. */
+        .menu-info-popup{
+            position:fixed;
+            z-index:9999;
+            max-width:230px;
+            padding:10px 12px;
+            background:var(--surface);
+            border:1px solid rgba(var(--ink-rgb),.15);
+            border-radius:10px;
+            box-shadow:0 8px 24px rgba(var(--ink-rgb),.18);
+            font-size:13px;
+            line-height:1.4;
+            color:var(--ink);
+        }
+
+        .menu-item-name{ flex:1; font-size:15px; }
+
+        .menu-item-price{
+            font-size:13.5px;
+            color:var(--ink-muted);
+            min-width:88px;
+            text-align:right;
+        }
+
+        .stepper{ display:flex; align-items:center; gap:8px; flex-shrink:0; }
+
+        .stepper button{
+            width:26px; height:26px;
+            border-radius:50%;
+            border:1px solid rgba(var(--ink-rgb),.25);
+            background:var(--surface);
+            color:var(--ink);
+            font-family:inherit;
+            font-size:16px;
+            line-height:1;
+            cursor:pointer;
+            display:flex; align-items:center; justify-content:center;
+            transition:transform .15s ease, background-color .15s ease, border-color .15s ease;
+        }
+
+        .stepper button:disabled{ opacity:.4; cursor:default; }
+
+        .stepper button:hover:not(:disabled){
+            background-color:rgba(var(--ink-rgb),.07);
+            border-color:rgba(var(--ink-rgb),.22);
+            transform:scale(1.05);
+        }
+
+        .stepper button:active:not(:disabled){ transform:scale(.97); }
+
+        .stepper .qty{ min-width:16px; text-align:center; font-size:14px; }
+
+        /* Stepper (−)(+) di DAFTAR KATEGORI -- treatment "filled" senada
+           .btn-primary (mustard solid, ikon terang). Selector ":not(.stepper-
+           mini)" sengaja dipakai supaya stepper mini di "Pesanan" TIDAK ikut
+           berubah -- bagian itu harus tetap putih/outline seperti semula
+           karena sudah punya latar mustard transparan sendiri. */
+        .stepper:not(.stepper-mini) button{
+            background:var(--mustard);
+            border:none;
+            color:var(--on-accent);
+        }
+
+        .stepper:not(.stepper-mini) button:hover:not(:disabled){
+            background-color:color-mix(in srgb, var(--mustard) 85%, white 15%);
+            border-color:transparent;
+            transform:scale(1.05);
+        }
+
+        /* Stepper versi kompak untuk bagian "Pesanan" -- warna & hover/active
+           tetap ikut .stepper button di atas, cuma ukurannya diperkecil. */
+        .stepper.stepper-mini button{ width:22px; height:22px; font-size:13px; }
+        .stepper.stepper-mini .qty{ font-size:13px; }
+
+        /* Garis pembatas tipis sebelum bagian "Pesanan" / sebelum Total */
+        .menu-divider{ height:0; border-top:1px solid rgba(var(--ink-rgb),.15); }
+
+        /* Wadah visual bagian "Pesanan" -- fill mustard muda + border sedikit
+           lebih gelap, supaya area ini kelihatan jelas beda dari daftar
+           kategori (putih) dan baris Total di bawahnya. */
+        .menu-pesanan-box{
+            display:flex;
+            flex-direction:column;
+            gap:14px;
+            background:var(--pesanan-bg);
+            border:1px solid var(--pesanan-border);
+            border-radius:10px;
+            padding:12px 14px;
+            margin:8px 0;
+        }
+
+        .menu-total-row{
+            display:flex;
+            justify-content:space-between;
+            align-items:center;
+            padding-top:12px;
+            border-top:1px solid rgba(var(--ink-rgb),.15);
+            font-weight:700;
+            font-size:15px;
+        }
+
+        .menu-actions,
+        .pay-buttons{
+            display:flex;
+            gap:10px;
+        }
+
+        /* Keterangan kecil di bawah tombol Batal/Pesan -- murni teks penutup
+           supaya widget terasa seperti balasan chat yang natural, bukan cuma
+           form. Tidak mengganggu layout tombol di atasnya (widget-box sudah
+           pakai gap:14px antar child). */
+        .menu-widget-hint{
+            text-align:center;
+            font-size:15px;
+            font-style:italic;
+            color:var(--ink);
+        }
+
+        .menu-actions button,
+        .pay-buttons button{
+            flex:1;
+            padding:10px 14px;
+            border-radius:14px;
+            font-size:14.5px;
+            font-family:inherit;
+            cursor:pointer;
+        }
+
+        .menu-actions button:disabled,
+        .pay-buttons button:disabled{ opacity:.5; cursor:default; }
+
+        .btn-outline,
+        .pay-buttons button{
+            transition:transform .15s ease, background-color .15s ease, border-color .15s ease;
+        }
+
+        .btn-outline:hover:not(:disabled),
+        .pay-buttons button:hover:not(:disabled){
+            background-color:rgba(var(--ink-rgb),.07);
+            border-color:rgba(var(--ink-rgb),.22);
+            transform:scale(1.05);
+        }
+
+        .btn-outline:active:not(:disabled),
+        .pay-buttons button:active:not(:disabled){ transform:scale(.97); }
+
+        .btn-primary,
+        .qris-confirm-btn{
+            transition:transform .15s ease, background-color .15s ease, filter .15s ease;
+        }
+
+        .btn-primary:hover:not(:disabled),
+        .qris-confirm-btn:hover:not(:disabled){
+            background:color-mix(in srgb, var(--mustard) 85%, white 15%);
+            transform:scale(1.05);
+        }
+
+        .btn-primary:active:not(:disabled),
+        .qris-confirm-btn:active:not(:disabled){ transform:scale(.97); }
+
+        .btn-outline{
+            background:transparent;
+            border:1px solid rgba(var(--ink-rgb),.3);
+            color:var(--ink);
+        }
+
+        .btn-primary{
+            background:var(--mustard);
+            border:none;
+            color:var(--on-accent);
+        }
+
+        .pay-buttons button{
+            background:var(--surface);
+            border:1px solid rgba(var(--ink-rgb),.3);
+            color:var(--ink);
+        }
+
+        .qris-confirm-btn{
+            display:inline-flex;
+            align-items:center;
+            gap:8px;
+            align-self:flex-start;
+            padding:10px 16px;
+            border-radius:14px;
+            border:none;
+            background:var(--mustard);
+            color:var(--on-accent);
+            font-family:inherit;
+            font-size:14.5px;
+            cursor:pointer;
+        }
+
+        .qris-confirm-btn:disabled{ background:color-mix(in srgb, var(--mustard) 85%, white 15%); cursor:default; }
+
+        .qris-confirm-btn svg{ width:16px; height:16px; }
+
+        .qris-confirm-btn.spinning svg{ animation:qris-spin .8s linear infinite; }
+
+        @keyframes qris-spin{ to{ transform:rotate(360deg); } }
+
+        /* Gambar QRIS: potret 3:4 selebar konten bubble, QR utuh tidak
+           terpotong (object-fit:contain, bukan cover). */
+        /* Widget QRIS sengaja diberi lebar PASTI (bukan cuma max-width) --
+           tanpa ini, width:100% pada .qris-image tidak punya acuan lebar
+           yang jelas (naik ke .bubble/.row yang cuma punya max-width, bukan
+           width), sehingga bubble ikut melebar sampai batas 78% kolom chat.
+           Widget menu (yang butuh lebar penuh untuk daftar 59 item) TIDAK
+           kena aturan ini karena class-nya terpisah. */
+        .qris-widget{
+            width:260px;
+            max-width:100%;
+        }
+
+        .qris-image{
+            width:100%;
+            max-width:100%;
+            aspect-ratio:3 / 4;
+            object-fit:contain;
+            background:var(--on-accent);
+            border-radius:12px;
+            margin:8px 0;
+            display:block;
+        }

@@ -1,0 +1,2568 @@
+{
+  "intents": [
+    {
+      "tag": "sapaan",
+      "patterns": [
+        "halo",
+        "hai",
+        "p",
+        "hi min",
+        "met pagi",
+        "selamat siang",
+        "malam min",
+        "permisi kak",
+        "woy ada yang jaga gak",
+        "pagi",
+        "siang",
+        "sore",
+        "malam",
+        "min",
+        "kak",
+        "sis",
+        "bro",
+        "haloo",
+        "haii",
+        "helo",
+        "hallo min",
+        "haloo kak",
+        "woy",
+        "assalamualaikum",
+        "punten",
+        "permisi min",
+        "misi kak",
+        "pagi min",
+        "sore kak",
+        "malem min",
+        "met sore",
+        "met malem",
+        "ada orang ga",
+        "ada admin ga nih",
+        "halo ada yang jaga?",
+        "test test",
+        "cek cek min",
+        "p min",
+        "pp",
+        "halo cafe",
+        "kulonuwun",
+        "eh halo",
+        "hai teh",
+        "halo teh",
+        "misi ya"
+      ],
+      "responses": [
+        "Halo, selamat datang di kafe kami! Ada yang bisa saya bantu? ☕",
+        "Hai juga! Senang kamu mampir, mau pesan apa hari ini?",
+        "Selamat datang kak, silakan kalau mau tanya-tanya menu atau langsung pesan ya!",
+        "Halo! Ada yang bisa dibantu? Menu kopi, pastry, sampai milkshake tersedia semua kok."
+      ]
+    },
+    {
+      "tag": "tanya_menu",
+      "patterns": [
+        "ada menu apa aja min",
+        "kopi nya ada apa aja ya",
+        "pastry nya ada apa aja",
+        "milkshake apa aja yang tersedia",
+        "kalian jual pastry gak",
+        "punya kopi gak di sini",
+        "menu minumannya apa aja ya",
+        "ada cemilan gak selain kopi",
+        "kalo mau ngemil enaknya ada apa di sini",
+        "menu nya apa aja nih",
+        "liat menu dong",
+        "menu dong min",
+        "ada apa aja di sini",
+        "jualan apa aja sih kalian",
+        "list menu dong kak",
+        "boleh liat daftar menu ga",
+        "menu andalan nya apa aja",
+        "di sini ada kopi apa aja ya",
+        "kopinya apa aja min",
+        "ada milkshake ga",
+        "milkshake nya ada ga",
+        "jual pastry ga di sini",
+        "pastrynya apa aja kak",
+        "ada kue2 gitu ga",
+        "cemilan apa aja yg ada",
+        "kalo minuman selain kopi ada ga",
+        "menu makanannya apa aja",
+        "share menu dong",
+        "menu lengkapnya mana min",
+        "ada caffee apa aja nih",
+        "coffee nya apa aja",
+        "mnu nya apa aja",
+        "ada wafel ga di sini",
+        "di sini jual apa aja ta",
+        "menu teh ada ndak",
+        "bnyk menu ga di sini",
+        "menunya bnyk ga"
+      ],
+      "responses": [
+        "Kami punya banyak pilihan kopi seperti Espresso, Cappuccino, Americano, sampai Latte Macchiato. Untuk pastry ada Egg Puff, Waffle, sampai Red Velvet. Kalau mau yang seger ada berbagai milkshake juga. Mau saya rekomendasikan menu terlaris kami?",
+        "Menu kami lengkap kak, dari kopi klasik, aneka puff pastry, sampai milkshake kekinian. Mau lihat menu kategori tertentu dulu atau langsung mau saya bantu carikan rekomendasi?",
+        "Ada kopi, pastry, dan milkshake, kak. Kalau bingung mau pilih yang mana, tinggal bilang aja, nanti saya kasih rekomendasi menu favorit pelanggan kami.",
+        "Tersedia lengkap kok: kopi, aneka puff & pastry, sampai milkshake. Ada yang lagi kamu incar, kak?"
+      ]
+    },
+    {
+      "tag": "minta_rekomen_kopi",
+      "patterns": [
+        "rekomendasiin minuman kopi dong",
+        "kopi susu yang best seller apa min",
+        "espresso based yang rekomen apa kak",
+        "mau kopi yang strong",
+        "kopi item paling enak yg mana",
+        "rekomen kopi item dong min",
+        "kopi susu paling laris apa",
+        "saranin kopi yang manis dong",
+        "kopi paling nendang apa min",
+        "best seller kopinya apa aja",
+        "kopi favorit pelanggan apa min",
+        "rekomendasi kopi susu dong kak",
+        "kopi yg body nya tebel apa",
+        "mnrt kalian kopi paling enak apa",
+        "kopi item yg wajib dicoba apa",
+        "sarnin kopi yg strong dong",
+        "rekomen espresso based dong",
+        "kopi paling top di sini apa",
+        "kopi item yg rekomen apaan",
+        "kopinya yg paling laku apa min",
+        "mau ngopi nih, rekomendasiin dong",
+        "rekomendasi kopi hitam dong"
+      ],
+      "responses": [
+        "REKOMENDASI_KOPI"
+      ]
+    },
+    {
+      "tag": "minta_rekomen_non_kopi",
+      "patterns": [
+        "rekomendasiin minuman non kopi dong",
+        "minuman non kopi yang paling enak apa min",
+        "ada milkshake yang direkomendasiin ga",
+        "minuman bebas kafein yang rekomen apa kak",
+        "milkshake paling laris apa min",
+        "rekomen smoothie dong",
+        "saranin minuman seger yang ga pake kopi dong",
+        "best seller non kopi nya apa",
+        "minuman fresh selain kopi yg rekomen apa",
+        "mau minuman seger, rekomendasiin dong",
+        "milkshake yg paling top apa min",
+        "non kopi yg wajib dicoba apa",
+        "rekomen mix fruit smoothie ga",
+        "minuman manis rekomendasi kalian apa",
+        "kalo ga ngopi enaknya pesen minuman apa",
+        "rekomendasiin milkshake yg enak dong",
+        "minuman dingin paling favorit apa min",
+        "sarnin dong minuman non coffe yg enak",
+        "lambungku sensitif, rekomendasiin minuman dong",
+        "temenku ga ngopi, enaknya pesen apa",
+        "gak kuat kafein nih kak, saranin dong",
+        "minuman non kopi yg hits apa min"
+      ],
+      "responses": [
+        "REKOMENDASI_NON_KOPI"
+      ]
+    },
+    {
+      "tag": "minta_rekomen_makanan",
+      "patterns": [
+        "rekomendasi makanan dong min",
+        "cemilan yang enak apa kak",
+        "ada pastry atau cake yang best seller ga",
+        "mau makanan buat ganjel laper min",
+        "rekomen cemilan dong",
+        "makanan paling laris apa min",
+        "saranin snack yang enak dong",
+        "puff yang wajib dicoba apa",
+        "cake paling enak versi kalian apa",
+        "rekomendasiin makanan berat dong",
+        "mau ngemil, enaknya pesen apa",
+        "makanan pendamping ngopi yg enak apa",
+        "best seller cemilan nya apa",
+        "rekomen pastry dong min",
+        "cake yg paling top apa",
+        "makanan yg hits di sini apa",
+        "laper nih, rekomendasiin makanan dong",
+        "snack paling favorit apa min",
+        "rekomendasi dessert dong",
+        "makanan ringan yg enak apaan",
+        "puff paling laris apa min",
+        "cake best seller nya apa aja"
+      ],
+      "responses": [
+        "REKOMENDASI_MAKANAN"
+      ]
+    },
+    {
+      "tag": "terima_kasih",
+      "patterns": [
+        "makasih ya",
+        "terima kasih banyak",
+        "thanks min",
+        "ok makasih infonya",
+        "sip, trims",
+        "makasih kak",
+        "oke deh, makasih ya",
+        "makasih",
+        "makasi",
+        "mksh",
+        "makasih min",
+        "makasih banyak kak",
+        "thank you",
+        "thanks ya",
+        "thx min",
+        "tq kak",
+        "tengkyu",
+        "makaci",
+        "arigatou min",
+        "suwun",
+        "nuhun",
+        "matur nuwun",
+        "oke sip makasih",
+        "sip thanks",
+        "mantap makasih min",
+        "oke makasih banyak ya",
+        "makasih infonya kak",
+        "makasih yaa",
+        "makasih bantuannya",
+        "udah itu aja, makasih",
+        "cukup, terima kasih"
+      ],
+      "responses": [
+        "Sama-sama, kak! Senang bisa bantu. Selamat menikmati ya ☕",
+        "Terima kasih kembali! Jangan ragu buat tanya-tanya lagi kalau butuh bantuan.",
+        "Siap, sama-sama! Semoga harimu menyenangkan.",
+        "Dengan senang hati, kak! Ditunggu kunjungannya lagi ya."
+      ]
+    },
+    {
+      "tag": "harga_americano",
+      "patterns": [
+        "americano itu berapa ya harganya?",
+        "kalo pesen americano berapa duit ya?",
+        "berapa sih harga americano di sini?",
+        "harga americano berapa ya kak?",
+        "mau nanya, americano harganya berapa ya",
+        "boleh tau harga americano gak?",
+        "bang, americano brp an?",
+        "info harga americano dong",
+        "americano teh sabaraha",
+        "americano piro min",
+        "mau order americano, brp ya totalnya",
+        "cek harga americano dong",
+        "ehh americano brp harganya",
+        "harga americano dong min",
+        "harga americano berpa ya kak",
+        "braps harga americano",
+        "brp americanno kak",
+        "amricano berapa min"
+      ],
+      "responses": [
+        "Untuk Americano, harganya Rp 36.000,00 ya kak. Mau langsung dipesan?",
+        "Harga Americano saat ini Rp 36.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!",
+        "Americano harganya Rp 36.000,00, kak. Enak banget lho, wajib dicoba!"
+      ]
+    },
+    {
+      "tag": "harga_asparagus_puff",
+      "patterns": [
+        "harga asparagus puff berapa ya kak?",
+        "asparagus puff harganya berapa min?",
+        "min, asparagus puff berapaan?",
+        "asparagus puff tuh berapaan sih harganya?",
+        "mau nanya, asparagus puff harganya berapa ya",
+        "kalau asparagus puff kena berapa ya?",
+        "hrga asparagus puff brp",
+        "brp harga asparagus puff?",
+        "asparagus puff brp duit kak?",
+        "bang, asparagus puff brp an?",
+        "harga asparagus puff dong min",
+        "asparagus puff per porsi brp ya kak",
+        "asparagus puff brp min?",
+        "mau order asparagus puff, brp ya totalnya",
+        "hagra asparagus puff berapa min",
+        "braps harga asparagus puff",
+        "asparagus puf berapa min"
+      ],
+      "responses": [
+        "Asparagus Puff harganya Rp 36.000,00, kak. Enak banget lho, wajib dicoba!",
+        "Untuk Asparagus Puff, harganya Rp 36.000,00 ya kak. Mau langsung dipesan?",
+        "Kabar baik, Asparagus Puff cuma Rp 36.000,00 kok. Mau saya bantu pesankan sekarang?"
+      ]
+    },
+    {
+      "tag": "harga_au_lait",
+      "patterns": [
+        "au lait di sini harganya berapa?",
+        "au lait harganya berapa min?",
+        "berapa sih harga au lait di sini?",
+        "harga au lait berapa ya kak?",
+        "kalau au lait kena berapa ya?",
+        "boleh tau harga au lait gak?",
+        "info harga au lait dong",
+        "pesen au lait kena brp ya",
+        "beli au lait satu habis brp",
+        "au lait mahal ga? brp emang",
+        "au lait satuannya brp",
+        "cek harga au lait dong",
+        "au lait harganya brp si",
+        "au lait piro min",
+        "harga au lait berpa ya kak",
+        "braps harga au lait"
+      ],
+      "responses": [
+        "Untuk Au Lait, harganya Rp 36.000,00 ya kak. Mau langsung dipesan?",
+        "Au Lait di kafe kami dibanderol Rp 36.000,00 aja, kak. Yuk langsung order kalau berminat!",
+        "Harga Au Lait saat ini Rp 36.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!"
+      ]
+    },
+    {
+      "tag": "harga_au_lait_cappuccino",
+      "patterns": [
+        "au lait cappuccino tuh berapaan sih harganya?",
+        "kalau au lait cappuccino kena berapa ya?",
+        "harga au lait cappuccino berapa ya kak?",
+        "berapa sih harga au lait cappuccino di sini?",
+        "au lait cappuccino harganya berapa min?",
+        "au lait cappuccino di sini harganya berapa?",
+        "au lait cappuccino teh sabaraha",
+        "au lait cappuccino brp duit kak?",
+        "info harga au lait cappuccino dong",
+        "au lait cappuccino ndak mahal kan? brp?",
+        "harga au lait cappuccino dong min",
+        "kalo au lait cappuccino brp ya",
+        "hrga au lait cappuccino brp",
+        "mau order au lait cappuccino, brp ya totalnya",
+        "braps harga au lait cappuccino",
+        "hagra au lait cappuccino berapa min",
+        "au lait cappucino berapa min",
+        "au lait capucino berapa min"
+      ],
+      "responses": [
+        "Untuk Au Lait Cappuccino, harganya Rp 36.000,00 ya kak. Mau langsung dipesan?",
+        "Au Lait Cappuccino di kafe kami dibanderol Rp 36.000,00 aja, kak. Yuk langsung order kalau berminat!",
+        "Au Lait Cappuccino harganya Rp 36.000,00, kak. Enak banget lho, wajib dicoba!"
+      ]
+    },
+    {
+      "tag": "harga_avocado_shake",
+      "patterns": [
+        "berapa sih harga avocado shake di sini?",
+        "kalo pesen avocado shake berapa duit ya?",
+        "avocado shake harganya berapa min?",
+        "avocado shake di sini harganya berapa?",
+        "boleh tau harga avocado shake gak?",
+        "kalau avocado shake kena berapa ya?",
+        "avocado shake per porsi brp ya kak",
+        "avocado shake brp duit kak?",
+        "beli avocado shake satu habis brp",
+        "ehh avocado shake brp harganya",
+        "bang, avocado shake brp an?",
+        "pesen avocado shake kena brp ya",
+        "avocado shake mahal ga? brp emang",
+        "avocado shake piro min",
+        "harga avocado shake berpa ya kak",
+        "harge avocado shake brp ya",
+        "brp avocad shake kak",
+        "brp avocado shak kak"
+      ],
+      "responses": [
+        "Kabar baik, Avocado Shake cuma Rp 38.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "Avocado Shake di kafe kami dibanderol Rp 38.000,00 aja, kak. Yuk langsung order kalau berminat!",
+        "Untuk Avocado Shake, harganya Rp 38.000,00 ya kak. Mau langsung dipesan?"
+      ]
+    },
+    {
+      "tag": "harga_banana_cream_treat",
+      "patterns": [
+        "kalau banana cream treat kena berapa ya?",
+        "banana cream treat tuh berapaan sih harganya?",
+        "min, banana cream treat berapaan?",
+        "banana cream treat itu berapa ya harganya?",
+        "harga banana cream treat berapa ya kak?",
+        "boleh tau harga banana cream treat gak?",
+        "brp harga banana cream treat?",
+        "banana cream treat ndak mahal kan? brp?",
+        "hrga banana cream treat brp",
+        "kalo banana cream treat brp ya",
+        "banana cream treat brp min?",
+        "banana cream treat satuannya brp",
+        "banana cream treat mahal ga? brp emang",
+        "info harga banana cream treat dong",
+        "hagra banana cream treat berapa min",
+        "braps harga banana cream treat",
+        "bnana cream treat berapa min",
+        "harga banana krim treat brp ya"
+      ],
+      "responses": [
+        "Untuk Banana Cream Treat, harganya Rp 38.000,00 ya kak. Mau langsung dipesan?",
+        "Kabar baik, Banana Cream Treat cuma Rp 38.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "Harga Banana Cream Treat saat ini Rp 38.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!"
+      ]
+    },
+    {
+      "tag": "harga_beef_wellington",
+      "patterns": [
+        "min, beef wellington berapaan?",
+        "mau nanya, beef wellington harganya berapa ya",
+        "beef wellington harganya berapa min?",
+        "berapa sih harga beef wellington di sini?",
+        "kalau beef wellington kena berapa ya?",
+        "kalo pesen beef wellington berapa duit ya?",
+        "ehh beef wellington brp harganya",
+        "hrga beef wellington brp",
+        "bang, beef wellington brp an?",
+        "cek harga beef wellington dong",
+        "mau order beef wellington, brp ya totalnya",
+        "beef wellington satuannya brp",
+        "beef wellington mahal ga? brp emang",
+        "kalo beef wellington brp ya",
+        "harga beef wellington berpa ya kak",
+        "braps harga beef wellington"
+      ],
+      "responses": [
+        "Beef Wellington harganya Rp 35.000,00, kak. Enak banget lho, wajib dicoba!",
+        "Kabar baik, Beef Wellington cuma Rp 35.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "Beef Wellington di kafe kami dibanderol Rp 35.000,00 aja, kak. Yuk langsung order kalau berminat!"
+      ]
+    },
+    {
+      "tag": "harga_black_coffee",
+      "patterns": [
+        "boleh tau harga black coffee gak?",
+        "min, black coffee berapaan?",
+        "kalo pesen black coffee berapa duit ya?",
+        "kalau black coffee kena berapa ya?",
+        "harga black coffee berapa ya kak?",
+        "black coffee tuh berapaan sih harganya?",
+        "harga black coffee dong min",
+        "black coffee piro min",
+        "black coffee teh sabaraha",
+        "ehh black coffee brp harganya",
+        "beli black coffee satu habis brp",
+        "pesen black coffee kena brp ya",
+        "bang, black coffee brp an?",
+        "kalo black coffee brp ya",
+        "braps harga black coffee",
+        "hagra black coffee berapa min",
+        "brp black cofee kak",
+        "brp black kopi kak"
+      ],
+      "responses": [
+        "Harga Black Coffee saat ini Rp 36.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!",
+        "Black Coffee harganya Rp 36.000,00, kak. Enak banget lho, wajib dicoba!",
+        "Black Coffee di kafe kami dibanderol Rp 36.000,00 aja, kak. Yuk langsung order kalau berminat!"
+      ]
+    },
+    {
+      "tag": "harga_black_forest",
+      "patterns": [
+        "mau nanya, black forest harganya berapa ya",
+        "boleh tau harga black forest gak?",
+        "black forest di sini harganya berapa?",
+        "black forest harganya berapa min?",
+        "kalau black forest kena berapa ya?",
+        "min, black forest berapaan?",
+        "cek harga black forest dong",
+        "black forest teh sabaraha",
+        "ehh black forest brp harganya",
+        "black forest satuannya brp",
+        "pesen black forest kena brp ya",
+        "kalo black forest brp ya",
+        "black forest ndak mahal kan? brp?",
+        "hrga black forest brp",
+        "harga black forest berpa ya kak",
+        "braps harga black forest"
+      ],
+      "responses": [
+        "Black Forest di kafe kami dibanderol Rp 36.000,00 aja, kak. Yuk langsung order kalau berminat!",
+        "Harga Black Forest saat ini Rp 36.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!",
+        "Untuk Black Forest, harganya Rp 36.000,00 ya kak. Mau langsung dipesan?"
+      ]
+    },
+    {
+      "tag": "harga_black_tie_mousse",
+      "patterns": [
+        "mau nanya, black tie mousse harganya berapa ya",
+        "berapa sih harga black tie mousse di sini?",
+        "harga black tie mousse berapa ya kak?",
+        "black tie mousse di sini harganya berapa?",
+        "kalau black tie mousse kena berapa ya?",
+        "boleh tau harga black tie mousse gak?",
+        "ehh black tie mousse brp harganya",
+        "black tie mousse per porsi brp ya kak",
+        "black tie mousse piro min",
+        "black tie mousse brp min?",
+        "harga black tie mousse dong min",
+        "black tie mousse harganya brp si",
+        "hrga black tie mousse brp",
+        "beli black tie mousse satu habis brp",
+        "hagra black tie mousse berapa min",
+        "harge black tie mousse brp ya"
+      ],
+      "responses": [
+        "Kabar baik, Black Tie Mousse cuma Rp 36.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "Harga Black Tie Mousse saat ini Rp 36.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!",
+        "Black Tie Mousse di kafe kami dibanderol Rp 36.000,00 aja, kak. Yuk langsung order kalau berminat!"
+      ]
+    },
+    {
+      "tag": "harga_blaeter_tertei_puff",
+      "patterns": [
+        "blaeter tertei puff itu berapa ya harganya?",
+        "kalau blaeter tertei puff kena berapa ya?",
+        "mau nanya, blaeter tertei puff harganya berapa ya",
+        "blaeter tertei puff harganya berapa min?",
+        "harga blaeter tertei puff berapa ya kak?",
+        "berapa sih harga blaeter tertei puff di sini?",
+        "blaeter tertei puff teh sabaraha",
+        "blaeter tertei puff mahal ga? brp emang",
+        "cek harga blaeter tertei puff dong",
+        "blaeter tertei puff harganya brp si",
+        "blaeter tertei puff per porsi brp ya kak",
+        "ehh blaeter tertei puff brp harganya",
+        "blaeter tertei puff satuannya brp",
+        "hrga blaeter tertei puff brp",
+        "hagra blaeter tertei puff berapa min",
+        "braps harga blaeter tertei puff",
+        "blaeter tertei puf berapa min"
+      ],
+      "responses": [
+        "Harga Blaeter Tertei Puff saat ini Rp 35.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!",
+        "Blaeter Tertei Puff harganya Rp 35.000,00, kak. Enak banget lho, wajib dicoba!",
+        "Kabar baik, Blaeter Tertei Puff cuma Rp 35.000,00 kok. Mau saya bantu pesankan sekarang?"
+      ]
+    },
+    {
+      "tag": "harga_blueberry_puff",
+      "patterns": [
+        "blueberry puff tuh berapaan sih harganya?",
+        "blueberry puff di sini harganya berapa?",
+        "harga blueberry puff berapa ya kak?",
+        "boleh tau harga blueberry puff gak?",
+        "blueberry puff itu berapa ya harganya?",
+        "mau nanya, blueberry puff harganya berapa ya",
+        "ehh blueberry puff brp harganya",
+        "blueberry puff satuannya brp",
+        "bang, blueberry puff brp an?",
+        "pesen blueberry puff kena brp ya",
+        "blueberry puff per porsi brp ya kak",
+        "blueberry puff brp duit kak?",
+        "hrga blueberry puff brp",
+        "brp harga blueberry puff?",
+        "hagra blueberry puff berapa min",
+        "harga blueberry puff berpa ya kak",
+        "brp blueberry puf kak",
+        "harga bluberry puff brp ya"
+      ],
+      "responses": [
+        "Blueberry Puff harganya Rp 35.000,00, kak. Enak banget lho, wajib dicoba!",
+        "Harga Blueberry Puff saat ini Rp 35.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!",
+        "Kabar baik, Blueberry Puff cuma Rp 35.000,00 kok. Mau saya bantu pesankan sekarang?"
+      ]
+    },
+    {
+      "tag": "harga_cappuccino",
+      "patterns": [
+        "berapa sih harga cappuccino di sini?",
+        "cappuccino itu berapa ya harganya?",
+        "harga cappuccino berapa ya kak?",
+        "mau nanya, cappuccino harganya berapa ya",
+        "kalo pesen cappuccino berapa duit ya?",
+        "cappuccino di sini harganya berapa?",
+        "hrga cappuccino brp",
+        "bang, cappuccino brp an?",
+        "cappuccino brp min?",
+        "cappuccino mahal ga? brp emang",
+        "cappuccino satuannya brp",
+        "cappuccino brp duit kak?",
+        "brp harga cappuccino?",
+        "cappuccino harganya brp si",
+        "harga cappuccino berpa ya kak",
+        "braps harga cappuccino",
+        "brp capucino kak",
+        "harga cappucino brp ya"
+      ],
+      "responses": [
+        "Kabar baik, Cappuccino cuma Rp 36.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "Untuk Cappuccino, harganya Rp 36.000,00 ya kak. Mau langsung dipesan?",
+        "Cappuccino di kafe kami dibanderol Rp 36.000,00 aja, kak. Yuk langsung order kalau berminat!"
+      ]
+    },
+    {
+      "tag": "harga_chan_s_espresso",
+      "patterns": [
+        "harga chan's espresso berapa ya kak?",
+        "min, chan's espresso berapaan?",
+        "boleh tau harga chan's espresso gak?",
+        "kalo pesen chan's espresso berapa duit ya?",
+        "chan's espresso itu berapa ya harganya?",
+        "chan's espresso di sini harganya berapa?",
+        "ehh chan's espresso brp harganya",
+        "chan's espresso ndak mahal kan? brp?",
+        "kalo chan's espresso brp ya",
+        "chan's espresso teh sabaraha",
+        "harga chan's espresso dong min",
+        "chan's espresso brp min?",
+        "pesen chan's espresso kena brp ya",
+        "info harga chan's espresso dong",
+        "harge chan's espresso brp ya",
+        "hagra chan's espresso berapa min",
+        "brp chan's expersso kak",
+        "chan's esspreso berapa min"
+      ],
+      "responses": [
+        "Chan's Espresso harganya Rp 36.000,00, kak. Enak banget lho, wajib dicoba!",
+        "Kabar baik, Chan's Espresso cuma Rp 36.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "Chan's Espresso di kafe kami dibanderol Rp 36.000,00 aja, kak. Yuk langsung order kalau berminat!"
+      ]
+    },
+    {
+      "tag": "harga_char_siu",
+      "patterns": [
+        "char siu di sini harganya berapa?",
+        "kalo pesen char siu berapa duit ya?",
+        "mau nanya, char siu harganya berapa ya",
+        "berapa sih harga char siu di sini?",
+        "boleh tau harga char siu gak?",
+        "kalau char siu kena berapa ya?",
+        "beli char siu satu habis brp",
+        "kalo char siu brp ya",
+        "char siu teh sabaraha",
+        "pesen char siu kena brp ya",
+        "mau order char siu, brp ya totalnya",
+        "brp harga char siu?",
+        "char siu brp min?",
+        "char siu piro min",
+        "hagra char siu berapa min",
+        "harga char siu berpa ya kak"
+      ],
+      "responses": [
+        "Char Siu di kafe kami dibanderol Rp 35.000,00 aja, kak. Yuk langsung order kalau berminat!",
+        "Char Siu harganya Rp 35.000,00, kak. Enak banget lho, wajib dicoba!",
+        "Harga Char Siu saat ini Rp 35.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!"
+      ]
+    },
+    {
+      "tag": "harga_cherry_vanilla",
+      "patterns": [
+        "boleh tau harga cherry vanilla gak?",
+        "berapa sih harga cherry vanilla di sini?",
+        "cherry vanilla itu berapa ya harganya?",
+        "kalau cherry vanilla kena berapa ya?",
+        "cherry vanilla di sini harganya berapa?",
+        "mau nanya, cherry vanilla harganya berapa ya",
+        "cherry vanilla satuannya brp",
+        "mau order cherry vanilla, brp ya totalnya",
+        "brp harga cherry vanilla?",
+        "cherry vanilla piro min",
+        "ehh cherry vanilla brp harganya",
+        "cherry vanilla harganya brp si",
+        "info harga cherry vanilla dong",
+        "kalo cherry vanilla brp ya",
+        "harga cherry vanilla berpa ya kak",
+        "harge cherry vanilla brp ya",
+        "brp cherry panila kak",
+        "brp cherry vanila kak"
+      ],
+      "responses": [
+        "Untuk Cherry Vanilla, harganya Rp 48.000,00 ya kak. Mau langsung dipesan?",
+        "Cherry Vanilla di kafe kami dibanderol Rp 48.000,00 aja, kak. Yuk langsung order kalau berminat!",
+        "Kabar baik, Cherry Vanilla cuma Rp 48.000,00 kok. Mau saya bantu pesankan sekarang?"
+      ]
+    },
+    {
+      "tag": "harga_chocolate_and_vanilla_combo",
+      "patterns": [
+        "min, chocolate and vanilla combo berapaan?",
+        "chocolate and vanilla combo tuh berapaan sih harganya?",
+        "harga chocolate and vanilla combo berapa ya kak?",
+        "mau nanya, chocolate and vanilla combo harganya berapa ya",
+        "berapa sih harga chocolate and vanilla combo di sini?",
+        "boleh tau harga chocolate and vanilla combo gak?",
+        "chocolate and vanilla combo harganya brp si",
+        "kalo chocolate and vanilla combo brp ya",
+        "chocolate and vanilla combo teh sabaraha",
+        "pesen chocolate and vanilla combo kena brp ya",
+        "chocolate and vanilla combo per porsi brp ya kak",
+        "harga chocolate and vanilla combo dong min",
+        "mau order chocolate and vanilla combo, brp ya totalnya",
+        "hrga chocolate and vanilla combo brp",
+        "harge chocolate and vanilla combo brp ya",
+        "braps harga chocolate and vanilla combo",
+        "harga chocolate and panila combo brp ya",
+        "harga coklat and vanilla combo brp ya"
+      ],
+      "responses": [
+        "Chocolate and Vanilla Combo di kafe kami dibanderol Rp 48.000,00 aja, kak. Yuk langsung order kalau berminat!",
+        "Harga Chocolate and Vanilla Combo saat ini Rp 48.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!",
+        "Kabar baik, Chocolate and Vanilla Combo cuma Rp 48.000,00 kok. Mau saya bantu pesankan sekarang?"
+      ]
+    },
+    {
+      "tag": "harga_cinnamon_orange_rolls",
+      "patterns": [
+        "harga cinnamon orange rolls berapa ya kak?",
+        "kalo pesen cinnamon orange rolls berapa duit ya?",
+        "berapa sih harga cinnamon orange rolls di sini?",
+        "cinnamon orange rolls itu berapa ya harganya?",
+        "boleh tau harga cinnamon orange rolls gak?",
+        "cinnamon orange rolls harganya berapa min?",
+        "cinnamon orange rolls harganya brp si",
+        "cinnamon orange rolls brp min?",
+        "cinnamon orange rolls piro min",
+        "cinnamon orange rolls ndak mahal kan? brp?",
+        "cek harga cinnamon orange rolls dong",
+        "cinnamon orange rolls per porsi brp ya kak",
+        "beli cinnamon orange rolls satu habis brp",
+        "info harga cinnamon orange rolls dong",
+        "harge cinnamon orange rolls brp ya",
+        "harga cinnamon orange rolls berpa ya kak",
+        "brp cinnamon orens rolls kak"
+      ],
+      "responses": [
+        "Harga Cinnamon Orange Rolls saat ini Rp 35.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!",
+        "Cinnamon Orange Rolls di kafe kami dibanderol Rp 35.000,00 aja, kak. Yuk langsung order kalau berminat!",
+        "Kabar baik, Cinnamon Orange Rolls cuma Rp 35.000,00 kok. Mau saya bantu pesankan sekarang?"
+      ]
+    },
+    {
+      "tag": "harga_con_panna",
+      "patterns": [
+        "con panna harganya berapa min?",
+        "kalau con panna kena berapa ya?",
+        "harga con panna berapa ya kak?",
+        "mau nanya, con panna harganya berapa ya",
+        "berapa sih harga con panna di sini?",
+        "con panna itu berapa ya harganya?",
+        "brp harga con panna?",
+        "kalo con panna brp ya",
+        "con panna teh sabaraha",
+        "pesen con panna kena brp ya",
+        "con panna ndak mahal kan? brp?",
+        "con panna brp duit kak?",
+        "info harga con panna dong",
+        "cek harga con panna dong",
+        "harga con panna berpa ya kak",
+        "harge con panna brp ya"
+      ],
+      "responses": [
+        "Kabar baik, Con Panna cuma Rp 36.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "Con Panna harganya Rp 36.000,00, kak. Enak banget lho, wajib dicoba!",
+        "Con Panna di kafe kami dibanderol Rp 36.000,00 aja, kak. Yuk langsung order kalau berminat!"
+      ]
+    },
+    {
+      "tag": "harga_cotton_candy_shake",
+      "patterns": [
+        "berapa sih harga cotton candy shake di sini?",
+        "cotton candy shake tuh berapaan sih harganya?",
+        "cotton candy shake di sini harganya berapa?",
+        "mau nanya, cotton candy shake harganya berapa ya",
+        "cotton candy shake itu berapa ya harganya?",
+        "min, cotton candy shake berapaan?",
+        "cotton candy shake per porsi brp ya kak",
+        "cotton candy shake piro min",
+        "mau order cotton candy shake, brp ya totalnya",
+        "cotton candy shake brp duit kak?",
+        "beli cotton candy shake satu habis brp",
+        "kalo cotton candy shake brp ya",
+        "cotton candy shake teh sabaraha",
+        "cotton candy shake harganya brp si",
+        "harge cotton candy shake brp ya",
+        "harga cotton candy shake berpa ya kak",
+        "cotton candy sheik berapa min",
+        "cotton candy shak berapa min"
+      ],
+      "responses": [
+        "Untuk Cotton Candy Shake, harganya Rp 38.000,00 ya kak. Mau langsung dipesan?",
+        "Cotton Candy Shake di kafe kami dibanderol Rp 38.000,00 aja, kak. Yuk langsung order kalau berminat!",
+        "Kabar baik, Cotton Candy Shake cuma Rp 38.000,00 kok. Mau saya bantu pesankan sekarang?"
+      ]
+    },
+    {
+      "tag": "harga_cranberry_orange",
+      "patterns": [
+        "min, cranberry orange berapaan?",
+        "mau nanya, cranberry orange harganya berapa ya",
+        "kalo pesen cranberry orange berapa duit ya?",
+        "cranberry orange di sini harganya berapa?",
+        "cranberry orange harganya berapa min?",
+        "boleh tau harga cranberry orange gak?",
+        "harga cranberry orange dong min",
+        "cek harga cranberry orange dong",
+        "cranberry orange harganya brp si",
+        "info harga cranberry orange dong",
+        "ehh cranberry orange brp harganya",
+        "hrga cranberry orange brp",
+        "cranberry orange brp min?",
+        "cranberry orange mahal ga? brp emang",
+        "braps harga cranberry orange",
+        "hagra cranberry orange berapa min",
+        "harga cranberry orens brp ya"
+      ],
+      "responses": [
+        "Untuk Cranberry Orange, harganya Rp 38.000,00 ya kak. Mau langsung dipesan?",
+        "Kabar baik, Cranberry Orange cuma Rp 38.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "Cranberry Orange harganya Rp 38.000,00, kak. Enak banget lho, wajib dicoba!"
+      ]
+    },
+    {
+      "tag": "harga_drumstick_milkshake",
+      "patterns": [
+        "kalau drumstick milkshake kena berapa ya?",
+        "kalo pesen drumstick milkshake berapa duit ya?",
+        "drumstick milkshake harganya berapa min?",
+        "drumstick milkshake di sini harganya berapa?",
+        "drumstick milkshake tuh berapaan sih harganya?",
+        "boleh tau harga drumstick milkshake gak?",
+        "hrga drumstick milkshake brp",
+        "brp harga drumstick milkshake?",
+        "drumstick milkshake brp duit kak?",
+        "cek harga drumstick milkshake dong",
+        "info harga drumstick milkshake dong",
+        "pesen drumstick milkshake kena brp ya",
+        "drumstick milkshake mahal ga? brp emang",
+        "beli drumstick milkshake satu habis brp",
+        "harge drumstick milkshake brp ya",
+        "hagra drumstick milkshake berapa min",
+        "harga drumstick milkshak brp ya",
+        "drumstick milksek berapa min"
+      ],
+      "responses": [
+        "Untuk Drumstick Milkshake, harganya Rp 36.000,00 ya kak. Mau langsung dipesan?",
+        "Kabar baik, Drumstick Milkshake cuma Rp 36.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "Drumstick Milkshake harganya Rp 36.000,00, kak. Enak banget lho, wajib dicoba!"
+      ]
+    },
+    {
+      "tag": "harga_easy_spinach",
+      "patterns": [
+        "kalau easy spinach kena berapa ya?",
+        "berapa sih harga easy spinach di sini?",
+        "kalo pesen easy spinach berapa duit ya?",
+        "boleh tau harga easy spinach gak?",
+        "easy spinach harganya berapa min?",
+        "mau nanya, easy spinach harganya berapa ya",
+        "easy spinach piro min",
+        "easy spinach ndak mahal kan? brp?",
+        "mau order easy spinach, brp ya totalnya",
+        "pesen easy spinach kena brp ya",
+        "bang, easy spinach brp an?",
+        "harga easy spinach dong min",
+        "easy spinach satuannya brp",
+        "kalo easy spinach brp ya",
+        "harge easy spinach brp ya",
+        "braps harga easy spinach"
+      ],
+      "responses": [
+        "Harga Easy Spinach saat ini Rp 35.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!",
+        "Easy Spinach harganya Rp 35.000,00, kak. Enak banget lho, wajib dicoba!",
+        "Untuk Easy Spinach, harganya Rp 35.000,00 ya kak. Mau langsung dipesan?"
+      ]
+    },
+    {
+      "tag": "harga_egg_puff",
+      "patterns": [
+        "egg puff di sini harganya berapa?",
+        "mau nanya, egg puff harganya berapa ya",
+        "kalau egg puff kena berapa ya?",
+        "egg puff harganya berapa min?",
+        "min, egg puff berapaan?",
+        "kalo pesen egg puff berapa duit ya?",
+        "harga egg puff dong min",
+        "egg puff ndak mahal kan? brp?",
+        "egg puff mahal ga? brp emang",
+        "kalo egg puff brp ya",
+        "bang, egg puff brp an?",
+        "beli egg puff satu habis brp",
+        "egg puff teh sabaraha",
+        "egg puff brp min?",
+        "harga egg puff berpa ya kak",
+        "hagra egg puff berapa min",
+        "harga egg puf brp ya"
+      ],
+      "responses": [
+        "Untuk Egg Puff, harganya Rp 36.000,00 ya kak. Mau langsung dipesan?",
+        "Egg Puff di kafe kami dibanderol Rp 36.000,00 aja, kak. Yuk langsung order kalau berminat!",
+        "Kabar baik, Egg Puff cuma Rp 36.000,00 kok. Mau saya bantu pesankan sekarang?"
+      ]
+    },
+    {
+      "tag": "harga_espresso",
+      "patterns": [
+        "espresso itu berapa ya harganya?",
+        "boleh tau harga espresso gak?",
+        "mau nanya, espresso harganya berapa ya",
+        "kalo pesen espresso berapa duit ya?",
+        "kalau espresso kena berapa ya?",
+        "harga espresso berapa ya kak?",
+        "espresso brp min?",
+        "espresso satuannya brp",
+        "espresso harganya brp si",
+        "bang, espresso brp an?",
+        "info harga espresso dong",
+        "kalo espresso brp ya",
+        "harga espresso dong min",
+        "mau order espresso, brp ya totalnya",
+        "braps harga espresso",
+        "harge espresso brp ya",
+        "expresso berapa min",
+        "harga esspreso brp ya"
+      ],
+      "responses": [
+        "Espresso di kafe kami dibanderol Rp 36.000,00 aja, kak. Yuk langsung order kalau berminat!",
+        "Harga Espresso saat ini Rp 36.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!",
+        "Untuk Espresso, harganya Rp 36.000,00 ya kak. Mau langsung dipesan?"
+      ]
+    },
+    {
+      "tag": "harga_frappe",
+      "patterns": [
+        "frappe harganya berapa min?",
+        "harga frappe berapa ya kak?",
+        "frappe tuh berapaan sih harganya?",
+        "boleh tau harga frappe gak?",
+        "frappe itu berapa ya harganya?",
+        "kalau frappe kena berapa ya?",
+        "brp harga frappe?",
+        "frappe per porsi brp ya kak",
+        "frappe mahal ga? brp emang",
+        "frappe ndak mahal kan? brp?",
+        "mau order frappe, brp ya totalnya",
+        "ehh frappe brp harganya",
+        "frappe brp min?",
+        "bang, frappe brp an?",
+        "hagra frappe berapa min",
+        "harge frappe brp ya",
+        "harga frape brp ya"
+      ],
+      "responses": [
+        "Harga Frappe saat ini Rp 35.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!",
+        "Kabar baik, Frappe cuma Rp 35.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "Untuk Frappe, harganya Rp 35.000,00 ya kak. Mau langsung dipesan?"
+      ]
+    },
+    {
+      "tag": "harga_french_coffee",
+      "patterns": [
+        "french coffee itu berapa ya harganya?",
+        "min, french coffee berapaan?",
+        "french coffee harganya berapa min?",
+        "french coffee tuh berapaan sih harganya?",
+        "mau nanya, french coffee harganya berapa ya",
+        "french coffee di sini harganya berapa?",
+        "bang, french coffee brp an?",
+        "french coffee piro min",
+        "french coffee satuannya brp",
+        "info harga french coffee dong",
+        "cek harga french coffee dong",
+        "harga french coffee dong min",
+        "french coffee teh sabaraha",
+        "french coffee per porsi brp ya kak",
+        "hagra french coffee berapa min",
+        "harge french coffee brp ya",
+        "brp french kopi kak",
+        "french caffee berapa min"
+      ],
+      "responses": [
+        "Kabar baik, French Coffee cuma Rp 35.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "French Coffee di kafe kami dibanderol Rp 35.000,00 aja, kak. Yuk langsung order kalau berminat!",
+        "Untuk French Coffee, harganya Rp 35.000,00 ya kak. Mau langsung dipesan?"
+      ]
+    },
+    {
+      "tag": "harga_french_pastry",
+      "patterns": [
+        "berapa sih harga french pastry di sini?",
+        "min, french pastry berapaan?",
+        "kalau french pastry kena berapa ya?",
+        "mau nanya, french pastry harganya berapa ya",
+        "kalo pesen french pastry berapa duit ya?",
+        "french pastry itu berapa ya harganya?",
+        "french pastry per porsi brp ya kak",
+        "bang, french pastry brp an?",
+        "french pastry satuannya brp",
+        "french pastry teh sabaraha",
+        "french pastry mahal ga? brp emang",
+        "pesen french pastry kena brp ya",
+        "kalo french pastry brp ya",
+        "french pastry harganya brp si",
+        "hagra french pastry berapa min",
+        "braps harga french pastry",
+        "harga french pastri brp ya",
+        "french pastery berapa min"
+      ],
+      "responses": [
+        "Untuk French Pastry, harganya Rp 35.000,00 ya kak. Mau langsung dipesan?",
+        "Kabar baik, French Pastry cuma Rp 35.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "French Pastry di kafe kami dibanderol Rp 35.000,00 aja, kak. Yuk langsung order kalau berminat!"
+      ]
+    },
+    {
+      "tag": "harga_fruit_dan_cheese_creme",
+      "patterns": [
+        "mau nanya, fruit & cheese creme harganya berapa ya",
+        "boleh tau harga fruit & cheese creme gak?",
+        "min, fruit & cheese creme berapaan?",
+        "fruit & cheese creme itu berapa ya harganya?",
+        "fruit & cheese creme harganya berapa min?",
+        "fruit & cheese creme tuh berapaan sih harganya?",
+        "info harga fruit & cheese creme dong",
+        "harga fruit & cheese creme dong min",
+        "bang, fruit & cheese creme brp an?",
+        "fruit & cheese creme ndak mahal kan? brp?",
+        "fruit & cheese creme per porsi brp ya kak",
+        "fruit & cheese creme harganya brp si",
+        "fruit & cheese creme teh sabaraha",
+        "brp harga fruit & cheese creme?",
+        "braps harga fruit & cheese creme",
+        "hagra fruit & cheese creme berapa min",
+        "brp fruit & keju creme kak",
+        "harga fruit & chese creme brp ya"
+      ],
+      "responses": [
+        "Harga Fruit & Cheese Creme saat ini Rp 36.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!",
+        "Kabar baik, Fruit & Cheese Creme cuma Rp 36.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "Untuk Fruit & Cheese Creme, harganya Rp 36.000,00 ya kak. Mau langsung dipesan?"
+      ]
+    },
+    {
+      "tag": "harga_honey_slice",
+      "patterns": [
+        "min, honey slice berapaan?",
+        "honey slice di sini harganya berapa?",
+        "honey slice tuh berapaan sih harganya?",
+        "mau nanya, honey slice harganya berapa ya",
+        "kalau honey slice kena berapa ya?",
+        "kalo pesen honey slice berapa duit ya?",
+        "honey slice harganya brp si",
+        "bang, honey slice brp an?",
+        "honey slice ndak mahal kan? brp?",
+        "honey slice brp min?",
+        "kalo honey slice brp ya",
+        "honey slice mahal ga? brp emang",
+        "mau order honey slice, brp ya totalnya",
+        "harga honey slice dong min",
+        "braps harga honey slice",
+        "hagra honey slice berapa min",
+        "hony slice berapa min"
+      ],
+      "responses": [
+        "Honey Slice di kafe kami dibanderol Rp 36.000,00 aja, kak. Yuk langsung order kalau berminat!",
+        "Honey Slice harganya Rp 36.000,00, kak. Enak banget lho, wajib dicoba!",
+        "Harga Honey Slice saat ini Rp 36.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!"
+      ]
+    },
+    {
+      "tag": "harga_iced_coffee_latte",
+      "patterns": [
+        "kalau iced coffee latte kena berapa ya?",
+        "harga iced coffee latte berapa ya kak?",
+        "mau nanya, iced coffee latte harganya berapa ya",
+        "iced coffee latte itu berapa ya harganya?",
+        "berapa sih harga iced coffee latte di sini?",
+        "iced coffee latte harganya berapa min?",
+        "iced coffee latte ndak mahal kan? brp?",
+        "kalo iced coffee latte brp ya",
+        "iced coffee latte satuannya brp",
+        "iced coffee latte per porsi brp ya kak",
+        "beli iced coffee latte satu habis brp",
+        "pesen iced coffee latte kena brp ya",
+        "bang, iced coffee latte brp an?",
+        "ehh iced coffee latte brp harganya",
+        "harga iced coffee latte berpa ya kak",
+        "braps harga iced coffee latte",
+        "brp iced coffee late kak",
+        "brp iced kopi latte kak"
+      ],
+      "responses": [
+        "Untuk Iced Coffee Latte, harganya Rp 35.000,00 ya kak. Mau langsung dipesan?",
+        "Kabar baik, Iced Coffee Latte cuma Rp 35.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "Iced Coffee Latte di kafe kami dibanderol Rp 35.000,00 aja, kak. Yuk langsung order kalau berminat!"
+      ]
+    },
+    {
+      "tag": "harga_keto_puff",
+      "patterns": [
+        "min, keto puff berapaan?",
+        "mau nanya, keto puff harganya berapa ya",
+        "kalo pesen keto puff berapa duit ya?",
+        "berapa sih harga keto puff di sini?",
+        "kalau keto puff kena berapa ya?",
+        "keto puff itu berapa ya harganya?",
+        "keto puff piro min",
+        "mau order keto puff, brp ya totalnya",
+        "beli keto puff satu habis brp",
+        "keto puff mahal ga? brp emang",
+        "kalo keto puff brp ya",
+        "bang, keto puff brp an?",
+        "brp harga keto puff?",
+        "keto puff per porsi brp ya kak",
+        "braps harga keto puff",
+        "harga keto puff berpa ya kak",
+        "keto puf berapa min"
+      ],
+      "responses": [
+        "Harga Keto Puff saat ini Rp 36.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!",
+        "Untuk Keto Puff, harganya Rp 36.000,00 ya kak. Mau langsung dipesan?",
+        "Kabar baik, Keto Puff cuma Rp 36.000,00 kok. Mau saya bantu pesankan sekarang?"
+      ]
+    },
+    {
+      "tag": "harga_latte_macchiato",
+      "patterns": [
+        "berapa sih harga latte macchiato di sini?",
+        "mau nanya, latte macchiato harganya berapa ya",
+        "latte macchiato tuh berapaan sih harganya?",
+        "latte macchiato di sini harganya berapa?",
+        "latte macchiato itu berapa ya harganya?",
+        "kalau latte macchiato kena berapa ya?",
+        "latte macchiato per porsi brp ya kak",
+        "latte macchiato mahal ga? brp emang",
+        "info harga latte macchiato dong",
+        "kalo latte macchiato brp ya",
+        "latte macchiato brp duit kak?",
+        "mau order latte macchiato, brp ya totalnya",
+        "ehh latte macchiato brp harganya",
+        "latte macchiato ndak mahal kan? brp?",
+        "hagra latte macchiato berapa min",
+        "braps harga latte macchiato",
+        "harga late macchiato brp ya",
+        "brp latte macchiatto kak"
+      ],
+      "responses": [
+        "Latte Macchiato di kafe kami dibanderol Rp 35.000,00 aja, kak. Yuk langsung order kalau berminat!",
+        "Kabar baik, Latte Macchiato cuma Rp 35.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "Untuk Latte Macchiato, harganya Rp 35.000,00 ya kak. Mau langsung dipesan?"
+      ]
+    },
+    {
+      "tag": "harga_macrons",
+      "patterns": [
+        "kalo pesen macrons berapa duit ya?",
+        "kalau macrons kena berapa ya?",
+        "mau nanya, macrons harganya berapa ya",
+        "macrons tuh berapaan sih harganya?",
+        "boleh tau harga macrons gak?",
+        "berapa sih harga macrons di sini?",
+        "brp harga macrons?",
+        "hrga macrons brp",
+        "ehh macrons brp harganya",
+        "macrons brp min?",
+        "macrons ndak mahal kan? brp?",
+        "info harga macrons dong",
+        "macrons mahal ga? brp emang",
+        "macrons brp duit kak?",
+        "harga macrons berpa ya kak",
+        "braps harga macrons"
+      ],
+      "responses": [
+        "Macrons harganya Rp 36.000,00, kak. Enak banget lho, wajib dicoba!",
+        "Harga Macrons saat ini Rp 36.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!",
+        "Untuk Macrons, harganya Rp 36.000,00 ya kak. Mau langsung dipesan?"
+      ]
+    },
+    {
+      "tag": "harga_malted_chocolate",
+      "patterns": [
+        "malted chocolate harganya berapa min?",
+        "malted chocolate tuh berapaan sih harganya?",
+        "kalo pesen malted chocolate berapa duit ya?",
+        "harga malted chocolate berapa ya kak?",
+        "mau nanya, malted chocolate harganya berapa ya",
+        "malted chocolate itu berapa ya harganya?",
+        "malted chocolate satuannya brp",
+        "hrga malted chocolate brp",
+        "malted chocolate piro min",
+        "malted chocolate mahal ga? brp emang",
+        "info harga malted chocolate dong",
+        "malted chocolate per porsi brp ya kak",
+        "bang, malted chocolate brp an?",
+        "malted chocolate harganya brp si",
+        "braps harga malted chocolate",
+        "harge malted chocolate brp ya",
+        "brp malted choclate kak",
+        "malted coklat berapa min"
+      ],
+      "responses": [
+        "Untuk Malted Chocolate, harganya Rp 38.000,00 ya kak. Mau langsung dipesan?",
+        "Malted Chocolate di kafe kami dibanderol Rp 38.000,00 aja, kak. Yuk langsung order kalau berminat!",
+        "Malted Chocolate harganya Rp 38.000,00, kak. Enak banget lho, wajib dicoba!"
+      ]
+    },
+    {
+      "tag": "harga_mango_cream_brulee",
+      "patterns": [
+        "min, mango cream brulee berapaan?",
+        "mango cream brulee tuh berapaan sih harganya?",
+        "harga mango cream brulee berapa ya kak?",
+        "boleh tau harga mango cream brulee gak?",
+        "mango cream brulee di sini harganya berapa?",
+        "kalo pesen mango cream brulee berapa duit ya?",
+        "mango cream brulee ndak mahal kan? brp?",
+        "harga mango cream brulee dong min",
+        "pesen mango cream brulee kena brp ya",
+        "mango cream brulee harganya brp si",
+        "mango cream brulee per porsi brp ya kak",
+        "mango cream brulee brp duit kak?",
+        "hrga mango cream brulee brp",
+        "brp harga mango cream brulee?",
+        "braps harga mango cream brulee",
+        "harga mango cream brulee berpa ya kak",
+        "harga mango krim brulee brp ya",
+        "brp mango crem brulee kak"
+      ],
+      "responses": [
+        "Kabar baik, Mango Cream Brulee cuma Rp 36.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "Mango Cream Brulee di kafe kami dibanderol Rp 36.000,00 aja, kak. Yuk langsung order kalau berminat!",
+        "Harga Mango Cream Brulee saat ini Rp 36.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!"
+      ]
+    },
+    {
+      "tag": "harga_maxres_special",
+      "patterns": [
+        "maxres special itu berapa ya harganya?",
+        "boleh tau harga maxres special gak?",
+        "maxres special harganya berapa min?",
+        "berapa sih harga maxres special di sini?",
+        "mau nanya, maxres special harganya berapa ya",
+        "maxres special di sini harganya berapa?",
+        "maxres special harganya brp si",
+        "maxres special brp duit kak?",
+        "harga maxres special dong min",
+        "maxres special satuannya brp",
+        "maxres special mahal ga? brp emang",
+        "maxres special ndak mahal kan? brp?",
+        "maxres special teh sabaraha",
+        "maxres special per porsi brp ya kak",
+        "hagra maxres special berapa min",
+        "harga maxres special berpa ya kak"
+      ],
+      "responses": [
+        "Untuk Maxres Special, harganya Rp 36.000,00 ya kak. Mau langsung dipesan?",
+        "Harga Maxres Special saat ini Rp 36.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!",
+        "Maxres Special di kafe kami dibanderol Rp 36.000,00 aja, kak. Yuk langsung order kalau berminat!"
+      ]
+    },
+    {
+      "tag": "harga_mix_fruit_smoothie",
+      "patterns": [
+        "mix fruit smoothie tuh berapaan sih harganya?",
+        "kalau mix fruit smoothie kena berapa ya?",
+        "mix fruit smoothie harganya berapa min?",
+        "berapa sih harga mix fruit smoothie di sini?",
+        "mau nanya, mix fruit smoothie harganya berapa ya",
+        "boleh tau harga mix fruit smoothie gak?",
+        "mix fruit smoothie piro min",
+        "pesen mix fruit smoothie kena brp ya",
+        "harga mix fruit smoothie dong min",
+        "mix fruit smoothie brp min?",
+        "beli mix fruit smoothie satu habis brp",
+        "mix fruit smoothie ndak mahal kan? brp?",
+        "mix fruit smoothie mahal ga? brp emang",
+        "mix fruit smoothie per porsi brp ya kak",
+        "harge mix fruit smoothie brp ya",
+        "braps harga mix fruit smoothie"
+      ],
+      "responses": [
+        "Mix Fruit Smoothie di kafe kami dibanderol Rp 38.000,00 aja, kak. Yuk langsung order kalau berminat!",
+        "Kabar baik, Mix Fruit Smoothie cuma Rp 38.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "Harga Mix Fruit Smoothie saat ini Rp 38.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!"
+      ]
+    },
+    {
+      "tag": "harga_nutella_puff",
+      "patterns": [
+        "nutella puff harganya berapa min?",
+        "harga nutella puff berapa ya kak?",
+        "mau nanya, nutella puff harganya berapa ya",
+        "kalo pesen nutella puff berapa duit ya?",
+        "boleh tau harga nutella puff gak?",
+        "kalau nutella puff kena berapa ya?",
+        "bang, nutella puff brp an?",
+        "nutella puff brp duit kak?",
+        "kalo nutella puff brp ya",
+        "beli nutella puff satu habis brp",
+        "info harga nutella puff dong",
+        "nutella puff mahal ga? brp emang",
+        "nutella puff piro min",
+        "nutella puff per porsi brp ya kak",
+        "hagra nutella puff berapa min",
+        "braps harga nutella puff",
+        "harga nutella puf brp ya",
+        "nutela puff berapa min"
+      ],
+      "responses": [
+        "Nutella Puff di kafe kami dibanderol Rp 36.000,00 aja, kak. Yuk langsung order kalau berminat!",
+        "Kabar baik, Nutella Puff cuma Rp 36.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "Untuk Nutella Puff, harganya Rp 36.000,00 ya kak. Mau langsung dipesan?"
+      ]
+    },
+    {
+      "tag": "harga_oreo_shake",
+      "patterns": [
+        "mau nanya, oreo shake harganya berapa ya",
+        "kalau oreo shake kena berapa ya?",
+        "oreo shake di sini harganya berapa?",
+        "harga oreo shake berapa ya kak?",
+        "kalo pesen oreo shake berapa duit ya?",
+        "oreo shake itu berapa ya harganya?",
+        "harga oreo shake dong min",
+        "oreo shake piro min",
+        "mau order oreo shake, brp ya totalnya",
+        "oreo shake satuannya brp",
+        "kalo oreo shake brp ya",
+        "pesen oreo shake kena brp ya",
+        "bang, oreo shake brp an?",
+        "oreo shake teh sabaraha",
+        "hagra oreo shake berapa min",
+        "braps harga oreo shake",
+        "orio shake berapa min",
+        "oreo sheik berapa min"
+      ],
+      "responses": [
+        "Kabar baik, Oreo Shake cuma Rp 36.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "Oreo Shake harganya Rp 36.000,00, kak. Enak banget lho, wajib dicoba!",
+        "Untuk Oreo Shake, harganya Rp 36.000,00 ya kak. Mau langsung dipesan?"
+      ]
+    },
+    {
+      "tag": "harga_peanut_vanilla",
+      "patterns": [
+        "peanut vanilla harganya berapa min?",
+        "harga peanut vanilla berapa ya kak?",
+        "min, peanut vanilla berapaan?",
+        "peanut vanilla tuh berapaan sih harganya?",
+        "kalo pesen peanut vanilla berapa duit ya?",
+        "kalau peanut vanilla kena berapa ya?",
+        "peanut vanilla piro min",
+        "peanut vanilla harganya brp si",
+        "peanut vanilla teh sabaraha",
+        "brp harga peanut vanilla?",
+        "peanut vanilla ndak mahal kan? brp?",
+        "ehh peanut vanilla brp harganya",
+        "peanut vanilla mahal ga? brp emang",
+        "peanut vanilla brp duit kak?",
+        "harge peanut vanilla brp ya",
+        "hagra peanut vanilla berapa min",
+        "brp peanut panila kak",
+        "brp peanut vanila kak"
+      ],
+      "responses": [
+        "Untuk Peanut Vanilla, harganya Rp 48.000,00 ya kak. Mau langsung dipesan?",
+        "Peanut Vanilla harganya Rp 48.000,00, kak. Enak banget lho, wajib dicoba!",
+        "Harga Peanut Vanilla saat ini Rp 48.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!"
+      ]
+    },
+    {
+      "tag": "harga_pista_shake",
+      "patterns": [
+        "harga pista shake berapa ya kak?",
+        "pista shake di sini harganya berapa?",
+        "mau nanya, pista shake harganya berapa ya",
+        "pista shake itu berapa ya harganya?",
+        "boleh tau harga pista shake gak?",
+        "berapa sih harga pista shake di sini?",
+        "brp harga pista shake?",
+        "pista shake satuannya brp",
+        "pista shake brp duit kak?",
+        "pista shake ndak mahal kan? brp?",
+        "harga pista shake dong min",
+        "bang, pista shake brp an?",
+        "pista shake mahal ga? brp emang",
+        "pista shake piro min",
+        "harge pista shake brp ya",
+        "hagra pista shake berapa min",
+        "pista shak berapa min",
+        "pista sheik berapa min"
+      ],
+      "responses": [
+        "Kabar baik, Pista Shake cuma Rp 36.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "Pista Shake di kafe kami dibanderol Rp 36.000,00 aja, kak. Yuk langsung order kalau berminat!",
+        "Harga Pista Shake saat ini Rp 36.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!"
+      ]
+    },
+    {
+      "tag": "harga_pumpkin_shake",
+      "patterns": [
+        "boleh tau harga pumpkin shake gak?",
+        "mau nanya, pumpkin shake harganya berapa ya",
+        "pumpkin shake harganya berapa min?",
+        "kalau pumpkin shake kena berapa ya?",
+        "pumpkin shake tuh berapaan sih harganya?",
+        "pumpkin shake di sini harganya berapa?",
+        "bang, pumpkin shake brp an?",
+        "pumpkin shake brp duit kak?",
+        "beli pumpkin shake satu habis brp",
+        "pumpkin shake mahal ga? brp emang",
+        "harga pumpkin shake dong min",
+        "info harga pumpkin shake dong",
+        "pumpkin shake brp min?",
+        "pumpkin shake harganya brp si",
+        "harga pumpkin shake berpa ya kak",
+        "harge pumpkin shake brp ya",
+        "pumpkin sheik berapa min",
+        "brp pumpkin shak kak"
+      ],
+      "responses": [
+        "Kabar baik, Pumpkin Shake cuma Rp 38.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "Harga Pumpkin Shake saat ini Rp 38.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!",
+        "Pumpkin Shake harganya Rp 38.000,00, kak. Enak banget lho, wajib dicoba!"
+      ]
+    },
+    {
+      "tag": "harga_red_velvet",
+      "patterns": [
+        "min, red velvet berapaan?",
+        "mau nanya, red velvet harganya berapa ya",
+        "kalo pesen red velvet berapa duit ya?",
+        "berapa sih harga red velvet di sini?",
+        "harga red velvet berapa ya kak?",
+        "red velvet tuh berapaan sih harganya?",
+        "cek harga red velvet dong",
+        "red velvet ndak mahal kan? brp?",
+        "red velvet satuannya brp",
+        "red velvet brp duit kak?",
+        "red velvet teh sabaraha",
+        "beli red velvet satu habis brp",
+        "red velvet brp min?",
+        "mau order red velvet, brp ya totalnya",
+        "harga red velvet berpa ya kak",
+        "harge red velvet brp ya",
+        "red pelpet berapa min"
+      ],
+      "responses": [
+        "Red Velvet harganya Rp 38.000,00, kak. Enak banget lho, wajib dicoba!",
+        "Harga Red Velvet saat ini Rp 38.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!",
+        "Untuk Red Velvet, harganya Rp 38.000,00 ya kak. Mau langsung dipesan?"
+      ]
+    },
+    {
+      "tag": "harga_rough_puff",
+      "patterns": [
+        "rough puff tuh berapaan sih harganya?",
+        "min, rough puff berapaan?",
+        "berapa sih harga rough puff di sini?",
+        "rough puff di sini harganya berapa?",
+        "mau nanya, rough puff harganya berapa ya",
+        "rough puff itu berapa ya harganya?",
+        "hrga rough puff brp",
+        "rough puff harganya brp si",
+        "info harga rough puff dong",
+        "rough puff per porsi brp ya kak",
+        "rough puff piro min",
+        "rough puff ndak mahal kan? brp?",
+        "rough puff satuannya brp",
+        "ehh rough puff brp harganya",
+        "harga rough puff berpa ya kak",
+        "harge rough puff brp ya",
+        "rough puf berapa min"
+      ],
+      "responses": [
+        "Harga Rough Puff saat ini Rp 36.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!",
+        "Untuk Rough Puff, harganya Rp 36.000,00 ya kak. Mau langsung dipesan?",
+        "Rough Puff harganya Rp 36.000,00, kak. Enak banget lho, wajib dicoba!"
+      ]
+    },
+    {
+      "tag": "harga_simple_cherry_puff",
+      "patterns": [
+        "simple cherry puff tuh berapaan sih harganya?",
+        "simple cherry puff itu berapa ya harganya?",
+        "kalo pesen simple cherry puff berapa duit ya?",
+        "boleh tau harga simple cherry puff gak?",
+        "simple cherry puff di sini harganya berapa?",
+        "min, simple cherry puff berapaan?",
+        "simple cherry puff harganya brp si",
+        "pesen simple cherry puff kena brp ya",
+        "cek harga simple cherry puff dong",
+        "hrga simple cherry puff brp",
+        "simple cherry puff satuannya brp",
+        "beli simple cherry puff satu habis brp",
+        "simple cherry puff piro min",
+        "mau order simple cherry puff, brp ya totalnya",
+        "harga simple cherry puff berpa ya kak",
+        "braps harga simple cherry puff",
+        "harga simple cherry puf brp ya",
+        "simple chery puff berapa min"
+      ],
+      "responses": [
+        "Simple Cherry Puff di kafe kami dibanderol Rp 36.000,00 aja, kak. Yuk langsung order kalau berminat!",
+        "Untuk Simple Cherry Puff, harganya Rp 36.000,00 ya kak. Mau langsung dipesan?",
+        "Kabar baik, Simple Cherry Puff cuma Rp 36.000,00 kok. Mau saya bantu pesankan sekarang?"
+      ]
+    },
+    {
+      "tag": "harga_simple_coffee",
+      "patterns": [
+        "mau nanya, simple coffee harganya berapa ya",
+        "kalo pesen simple coffee berapa duit ya?",
+        "min, simple coffee berapaan?",
+        "kalau simple coffee kena berapa ya?",
+        "simple coffee itu berapa ya harganya?",
+        "simple coffee harganya berapa min?",
+        "simple coffee ndak mahal kan? brp?",
+        "kalo simple coffee brp ya",
+        "simple coffee per porsi brp ya kak",
+        "simple coffee mahal ga? brp emang",
+        "info harga simple coffee dong",
+        "simple coffee piro min",
+        "simple coffee brp min?",
+        "simple coffee harganya brp si",
+        "braps harga simple coffee",
+        "harge simple coffee brp ya",
+        "brp simple kopi kak",
+        "brp simple caffee kak"
+      ],
+      "responses": [
+        "Kabar baik, Simple Coffee cuma Rp 29.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "Simple Coffee harganya Rp 29.000,00, kak. Enak banget lho, wajib dicoba!",
+        "Simple Coffee di kafe kami dibanderol Rp 29.000,00 aja, kak. Yuk langsung order kalau berminat!"
+      ]
+    },
+    {
+      "tag": "harga_strawberry_basque",
+      "patterns": [
+        "berapa sih harga strawberry basque di sini?",
+        "min, strawberry basque berapaan?",
+        "strawberry basque itu berapa ya harganya?",
+        "strawberry basque harganya berapa min?",
+        "harga strawberry basque berapa ya kak?",
+        "mau nanya, strawberry basque harganya berapa ya",
+        "strawberry basque mahal ga? brp emang",
+        "hrga strawberry basque brp",
+        "info harga strawberry basque dong",
+        "kalo strawberry basque brp ya",
+        "bang, strawberry basque brp an?",
+        "strawberry basque teh sabaraha",
+        "cek harga strawberry basque dong",
+        "harga strawberry basque dong min",
+        "harga strawberry basque berpa ya kak",
+        "braps harga strawberry basque",
+        "strawbery basque berapa min",
+        "harga stroberi basque brp ya"
+      ],
+      "responses": [
+        "Harga Strawberry Basque saat ini Rp 36.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!",
+        "Untuk Strawberry Basque, harganya Rp 36.000,00 ya kak. Mau langsung dipesan?",
+        "Strawberry Basque di kafe kami dibanderol Rp 36.000,00 aja, kak. Yuk langsung order kalau berminat!"
+      ]
+    },
+    {
+      "tag": "harga_strawberry_tiramisu",
+      "patterns": [
+        "strawberry tiramisu harganya berapa min?",
+        "mau nanya, strawberry tiramisu harganya berapa ya",
+        "kalau strawberry tiramisu kena berapa ya?",
+        "harga strawberry tiramisu berapa ya kak?",
+        "min, strawberry tiramisu berapaan?",
+        "kalo pesen strawberry tiramisu berapa duit ya?",
+        "strawberry tiramisu piro min",
+        "info harga strawberry tiramisu dong",
+        "strawberry tiramisu per porsi brp ya kak",
+        "strawberry tiramisu ndak mahal kan? brp?",
+        "bang, strawberry tiramisu brp an?",
+        "strawberry tiramisu teh sabaraha",
+        "beli strawberry tiramisu satu habis brp",
+        "hrga strawberry tiramisu brp",
+        "harge strawberry tiramisu brp ya",
+        "harga strawberry tiramisu berpa ya kak",
+        "harga strawbery tiramisu brp ya",
+        "stroberi tiramisu berapa min"
+      ],
+      "responses": [
+        "Kabar baik, Strawberry Tiramisu cuma Rp 35.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "Harga Strawberry Tiramisu saat ini Rp 35.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!",
+        "Strawberry Tiramisu harganya Rp 35.000,00, kak. Enak banget lho, wajib dicoba!"
+      ]
+    },
+    {
+      "tag": "harga_tanuki",
+      "patterns": [
+        "tanuki di sini harganya berapa?",
+        "tanuki tuh berapaan sih harganya?",
+        "min, tanuki berapaan?",
+        "kalau tanuki kena berapa ya?",
+        "harga tanuki berapa ya kak?",
+        "kalo pesen tanuki berapa duit ya?",
+        "tanuki harganya brp si",
+        "brp harga tanuki?",
+        "tanuki mahal ga? brp emang",
+        "tanuki piro min",
+        "kalo tanuki brp ya",
+        "mau order tanuki, brp ya totalnya",
+        "harga tanuki dong min",
+        "info harga tanuki dong",
+        "harga tanuki berpa ya kak",
+        "harge tanuki brp ya"
+      ],
+      "responses": [
+        "Harga Tanuki saat ini Rp 29.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!",
+        "Untuk Tanuki, harganya Rp 29.000,00 ya kak. Mau langsung dipesan?",
+        "Tanuki harganya Rp 29.000,00, kak. Enak banget lho, wajib dicoba!"
+      ]
+    },
+    {
+      "tag": "harga_tart_social",
+      "patterns": [
+        "boleh tau harga tart social gak?",
+        "kalo pesen tart social berapa duit ya?",
+        "berapa sih harga tart social di sini?",
+        "tart social tuh berapaan sih harganya?",
+        "min, tart social berapaan?",
+        "tart social di sini harganya berapa?",
+        "ehh tart social brp harganya",
+        "info harga tart social dong",
+        "brp harga tart social?",
+        "tart social brp min?",
+        "hrga tart social brp",
+        "tart social ndak mahal kan? brp?",
+        "tart social teh sabaraha",
+        "cek harga tart social dong",
+        "braps harga tart social",
+        "harge tart social brp ya"
+      ],
+      "responses": [
+        "Kabar baik, Tart Social cuma Rp 35.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "Tart Social harganya Rp 35.000,00, kak. Enak banget lho, wajib dicoba!",
+        "Harga Tart Social saat ini Rp 35.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!"
+      ]
+    },
+    {
+      "tag": "harga_tiramisu_milkshake",
+      "patterns": [
+        "tiramisu milkshake itu berapa ya harganya?",
+        "tiramisu milkshake di sini harganya berapa?",
+        "boleh tau harga tiramisu milkshake gak?",
+        "harga tiramisu milkshake berapa ya kak?",
+        "berapa sih harga tiramisu milkshake di sini?",
+        "tiramisu milkshake tuh berapaan sih harganya?",
+        "brp harga tiramisu milkshake?",
+        "pesen tiramisu milkshake kena brp ya",
+        "cek harga tiramisu milkshake dong",
+        "tiramisu milkshake teh sabaraha",
+        "tiramisu milkshake mahal ga? brp emang",
+        "harga tiramisu milkshake dong min",
+        "info harga tiramisu milkshake dong",
+        "tiramisu milkshake harganya brp si",
+        "hagra tiramisu milkshake berapa min",
+        "braps harga tiramisu milkshake",
+        "harga tiramisu milksek brp ya",
+        "harga tiramisyu milkshake brp ya"
+      ],
+      "responses": [
+        "Tiramisu Milkshake di kafe kami dibanderol Rp 48.000,00 aja, kak. Yuk langsung order kalau berminat!",
+        "Tiramisu Milkshake harganya Rp 48.000,00, kak. Enak banget lho, wajib dicoba!",
+        "Untuk Tiramisu Milkshake, harganya Rp 48.000,00 ya kak. Mau langsung dipesan?"
+      ]
+    },
+    {
+      "tag": "harga_tomato_cheese",
+      "patterns": [
+        "boleh tau harga tomato cheese gak?",
+        "harga tomato cheese berapa ya kak?",
+        "tomato cheese di sini harganya berapa?",
+        "tomato cheese tuh berapaan sih harganya?",
+        "kalau tomato cheese kena berapa ya?",
+        "mau nanya, tomato cheese harganya berapa ya",
+        "info harga tomato cheese dong",
+        "hrga tomato cheese brp",
+        "cek harga tomato cheese dong",
+        "pesen tomato cheese kena brp ya",
+        "tomato cheese harganya brp si",
+        "tomato cheese satuannya brp",
+        "kalo tomato cheese brp ya",
+        "tomato cheese brp min?",
+        "harga tomato cheese berpa ya kak",
+        "braps harga tomato cheese",
+        "harga tomato keju brp ya",
+        "harga tomato chese brp ya"
+      ],
+      "responses": [
+        "Tomato Cheese di kafe kami dibanderol Rp 35.000,00 aja, kak. Yuk langsung order kalau berminat!",
+        "Untuk Tomato Cheese, harganya Rp 35.000,00 ya kak. Mau langsung dipesan?",
+        "Kabar baik, Tomato Cheese cuma Rp 35.000,00 kok. Mau saya bantu pesankan sekarang?"
+      ]
+    },
+    {
+      "tag": "harga_vanilla_layer",
+      "patterns": [
+        "vanilla layer di sini harganya berapa?",
+        "mau nanya, vanilla layer harganya berapa ya",
+        "harga vanilla layer berapa ya kak?",
+        "vanilla layer itu berapa ya harganya?",
+        "boleh tau harga vanilla layer gak?",
+        "min, vanilla layer berapaan?",
+        "vanilla layer mahal ga? brp emang",
+        "vanilla layer per porsi brp ya kak",
+        "vanilla layer brp min?",
+        "vanilla layer harganya brp si",
+        "hrga vanilla layer brp",
+        "cek harga vanilla layer dong",
+        "ehh vanilla layer brp harganya",
+        "info harga vanilla layer dong",
+        "braps harga vanilla layer",
+        "harge vanilla layer brp ya",
+        "vanila layer berapa min",
+        "brp panila layer kak"
+      ],
+      "responses": [
+        "Harga Vanilla Layer saat ini Rp 36.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!",
+        "Vanilla Layer di kafe kami dibanderol Rp 36.000,00 aja, kak. Yuk langsung order kalau berminat!",
+        "Untuk Vanilla Layer, harganya Rp 36.000,00 ya kak. Mau langsung dipesan?"
+      ]
+    },
+    {
+      "tag": "harga_waffle_choco",
+      "patterns": [
+        "waffle choco harganya berapa min?",
+        "min, waffle choco berapaan?",
+        "waffle choco di sini harganya berapa?",
+        "kalo pesen waffle choco berapa duit ya?",
+        "mau nanya, waffle choco harganya berapa ya",
+        "harga waffle choco berapa ya kak?",
+        "ehh waffle choco brp harganya",
+        "waffle choco mahal ga? brp emang",
+        "mau order waffle choco, brp ya totalnya",
+        "info harga waffle choco dong",
+        "waffle choco ndak mahal kan? brp?",
+        "brp harga waffle choco?",
+        "waffle choco teh sabaraha",
+        "hrga waffle choco brp",
+        "harge waffle choco brp ya",
+        "hagra waffle choco berapa min",
+        "wafel choco berapa min",
+        "waffel choco berapa min"
+      ],
+      "responses": [
+        "Waffle Choco di kafe kami dibanderol Rp 38.000,00 aja, kak. Yuk langsung order kalau berminat!",
+        "Kabar baik, Waffle Choco cuma Rp 38.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "Waffle Choco harganya Rp 38.000,00, kak. Enak banget lho, wajib dicoba!"
+      ]
+    },
+    {
+      "tag": "harga_waffle_ice_cream",
+      "patterns": [
+        "waffle ice cream tuh berapaan sih harganya?",
+        "boleh tau harga waffle ice cream gak?",
+        "waffle ice cream harganya berapa min?",
+        "min, waffle ice cream berapaan?",
+        "kalo pesen waffle ice cream berapa duit ya?",
+        "mau nanya, waffle ice cream harganya berapa ya",
+        "cek harga waffle ice cream dong",
+        "pesen waffle ice cream kena brp ya",
+        "waffle ice cream satuannya brp",
+        "waffle ice cream mahal ga? brp emang",
+        "beli waffle ice cream satu habis brp",
+        "kalo waffle ice cream brp ya",
+        "bang, waffle ice cream brp an?",
+        "harga waffle ice cream dong min",
+        "hagra waffle ice cream berapa min",
+        "harge waffle ice cream brp ya",
+        "waffle ice crem berapa min",
+        "brp waffel ice cream kak"
+      ],
+      "responses": [
+        "Kabar baik, Waffle Ice Cream cuma Rp 38.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "Waffle Ice Cream di kafe kami dibanderol Rp 38.000,00 aja, kak. Yuk langsung order kalau berminat!",
+        "Waffle Ice Cream harganya Rp 38.000,00, kak. Enak banget lho, wajib dicoba!"
+      ]
+    },
+    {
+      "tag": "harga_wainans_choco_coffee",
+      "patterns": [
+        "wainans choco coffee itu berapa ya harganya?",
+        "harga wainans choco coffee berapa ya kak?",
+        "boleh tau harga wainans choco coffee gak?",
+        "kalau wainans choco coffee kena berapa ya?",
+        "mau nanya, wainans choco coffee harganya berapa ya",
+        "berapa sih harga wainans choco coffee di sini?",
+        "wainans choco coffee brp duit kak?",
+        "wainans choco coffee teh sabaraha",
+        "wainans choco coffee ndak mahal kan? brp?",
+        "info harga wainans choco coffee dong",
+        "ehh wainans choco coffee brp harganya",
+        "wainans choco coffee harganya brp si",
+        "wainans choco coffee piro min",
+        "cek harga wainans choco coffee dong",
+        "braps harga wainans choco coffee",
+        "hagra wainans choco coffee berapa min",
+        "wainans choco cofee berapa min",
+        "brp wainans choco kopi kak"
+      ],
+      "responses": [
+        "Kabar baik, Wainans Choco Coffee cuma Rp 36.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "Wainans Choco Coffee di kafe kami dibanderol Rp 36.000,00 aja, kak. Yuk langsung order kalau berminat!",
+        "Harga Wainans Choco Coffee saat ini Rp 36.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!"
+      ]
+    },
+    {
+      "tag": "harga_walnut_pastry",
+      "patterns": [
+        "mau nanya, walnut pastry harganya berapa ya",
+        "min, walnut pastry berapaan?",
+        "walnut pastry tuh berapaan sih harganya?",
+        "walnut pastry di sini harganya berapa?",
+        "walnut pastry itu berapa ya harganya?",
+        "berapa sih harga walnut pastry di sini?",
+        "walnut pastry teh sabaraha",
+        "beli walnut pastry satu habis brp",
+        "bang, walnut pastry brp an?",
+        "pesen walnut pastry kena brp ya",
+        "brp harga walnut pastry?",
+        "hrga walnut pastry brp",
+        "walnut pastry piro min",
+        "walnut pastry per porsi brp ya kak",
+        "harga walnut pastry berpa ya kak",
+        "braps harga walnut pastry",
+        "brp walnut pastery kak",
+        "harga walnut pastri brp ya"
+      ],
+      "responses": [
+        "Walnut Pastry harganya Rp 38.000,00, kak. Enak banget lho, wajib dicoba!",
+        "Kabar baik, Walnut Pastry cuma Rp 38.000,00 kok. Mau saya bantu pesankan sekarang?",
+        "Harga Walnut Pastry saat ini Rp 38.000,00. Kalau mau pesan, langsung bilang aja ya, kami siap bantu!"
+      ]
+    },
+    {
+      "tag": "harga_air_mineral",
+      "patterns": [
+        "harga air mineral berapa ya kak?",
+        "ada air putih botol gak, berapa harganya?",
+        "kalo air mineral berapa duit ya?",
+        "min, air putih di sini bayar gak?",
+        "boleh tau harga air mineral gak?",
+        "air putih kemasan harganya berapa min?",
+        "air mineral mahal ga? brp emang",
+        "ehh air mineral brp harganya",
+        "kalo air mineral brp ya",
+        "info harga air mineral dong",
+        "air mineral satuannya brp",
+        "air mineral teh sabaraha",
+        "pesen air mineral kena brp ya",
+        "mau order air mineral, brp ya totalnya",
+        "harge air mineral brp ya",
+        "hagra air mineral berapa min",
+        "brp air minral kak"
+      ],
+      "responses": [
+        "Untuk Air Mineral botol kemasan, harganya Rp 10.000,00 ya kak. Mau langsung dipesan?",
+        "Air Mineral di kafe kami dibanderol Rp 10.000,00 aja, kak. Mau ditambahkan ke pesanan?",
+        "Harga Air Mineral saat ini Rp 10.000,00, kak. Silakan kalau mau pesan, kami siap bantu ya!"
+      ]
+    },
+    {
+      "tag": "tanya_wifi",
+      "patterns": [
+        "wifi nya apa min",
+        "pass wifi dong kak",
+        "wifinya kenceng ga",
+        "minta password wifi",
+        "password wifi apa ya",
+        "wifi apa passwordnya",
+        "ada wifi ga di sini",
+        "free wifi ga kak",
+        "wifi gratis ga min",
+        "pw wifi dong",
+        "pass wifinya brp",
+        "wifi nya lemot ga",
+        "internetnya kenceng gak di sini",
+        "wifinya bisa buat zoom ga",
+        "kuota abis nih, wifi dong min",
+        "boleh minta sandi wifi ga kak",
+        "sandi wifi apa ya",
+        "wipi nya apa min",
+        "wifi pasword nya apa",
+        "kecepatan wifinya brp mbps",
+        "wifi di sini stabil ndak",
+        "wifinya bisa buat streaming ga",
+        "konek wifi gimana caranya kak",
+        "id sama pass wifi apa ya"
+      ],
+      "responses": [
+        "Wifi gratis tersedia kak! Nama jaringannya 'CafeKita_Guest' dan passwordnya 'ngopidulu2026'. Kecepatannya sampai 50 Mbps, aman buat kerja, zoom, atau streaming. Selamat berselancar! 📶",
+        "Ada dong kak! Silakan konek ke wifi 'CafeKita_Guest', password: 'ngopidulu2026'. Internetnya kencang dan stabil kok, cocok buat nugas atau meeting online. 😊",
+        "Password wifi kami 'ngopidulu2026' ya kak, jaringannya 'CafeKita_Guest'. Kalau ada kendala koneksi, tinggal panggil staf kami ya!"
+      ]
+    },
+    {
+      "tag": "tanya_fasilitas",
+      "patterns": [
+        "banyak colokan ga",
+        "ada mushola gak kak",
+        "bisa ngerokok di dalem ga",
+        "meja yang deket stopkontak sebelah mana",
+        "ada smoking area ga min",
+        "colokan listrik ada di tiap meja ga",
+        "stopkontak banyak ndak",
+        "ada tempat sholat ga di sini",
+        "musola nya di mana ya kak",
+        "tempat wudhu ada ga",
+        "bisa bawa laptop kerja di sini ga",
+        "nyaman buat wfc ga",
+        "kalo mau ngerokok di mana ya",
+        "smoking room ada ta",
+        "ada toilet ga kak",
+        "colokan buat ngecas ada ga",
+        "spot buat kerja yg ada colokannya mana",
+        "ruangan ac ga di sini",
+        "ada area bebas rokok ga",
+        "musholla ada gak ya",
+        "fasilitasnya apa aja sih di sini",
+        "kids friendly ga tempatnya",
+        "parkiran luas ga min",
+        "ada parkir mobil ga",
+        "ada terminal listrik ga",
+        "minjem terminal dong kak",
+        "bawa terminal sendiri boleh ga",
+        "terminal colokan ada ga",
+        "numpang terminal listrik boleh ga min",
+        "sedia terminal buat charge ga",
+        "pinjem terminal listrik bisa ga",
+        "ada terminal buat nyolok laptop ga",
+        "ada terminal listrik?",
+        "ada stop kontak",
+        "ada punya colokan?",
+        "ada stop kontak ga",
+        "punya colokan ga min",
+        "ada colokan ga kak",
+        "punya stop kontak ga",
+        "ada terminal buat charge hp",
+        "punya terminal listrik ga",
+        "ada colokan listrik ga min"
+      ],
+      "responses": [
+        "Fasilitas kami cukup lengkap kak: colokan listrik tersedia di hampir semua meja (spot paling banyak di area indoor dekat dinding), mushola bersih dengan tempat wudhu di lantai 2, dan smoking area khusus di area outdoor belakang. Toilet dan parkiran motor-mobil juga tersedia ya! 😊",
+        "Tenang kak, di sini ramah buat kerja: stopkontak ada di tiap meja indoor, wifi kencang, dan ruangan ber-AC. Untuk sholat ada mushola di lantai 2, dan kalau mau merokok silakan di area outdoor ya, indoor kami bebas asap rokok. 🙏",
+        "Ada semua kak! Colokan di mayoritas meja, mushola + tempat wudhu di lantai 2, smoking area di outdoor belakang, toilet bersih, dan parkiran cukup luas. Silakan pilih spot ternyamanmu ya!"
+      ]
+    },
+    {
+      "tag": "tanya_jam_operasional",
+      "patterns": [
+        "buka sampai jam berapa min",
+        "jam operasionalnya gimana",
+        "weekend tutup jam brp",
+        "buka jam berapa kak",
+        "tutupnya jam brp",
+        "jam buka nya kapan",
+        "hari minggu buka ga",
+        "besok buka ga min",
+        "sabtu minggu buka sampe jam brp",
+        "open sampai malam ga",
+        "masih buka ga sekarang",
+        "close jam berapa hari ini",
+        "kalo malem minggu tutup jam brp",
+        "buka tiap hari ga",
+        "hari libur nasional buka ndak",
+        "jam operasional weekday brp ya",
+        "pagi udah buka jam brp",
+        "bisa dine in sampai jam brp",
+        "last order jam berapa min",
+        "jam brp terakhir bisa pesen",
+        "oprasionalnya jam brp aja",
+        "kapan aja bukanya kak"
+      ],
+      "responses": [
+        "Jam operasional kami: Senin-Jumat pukul 08.00-22.00 WIB, dan Sabtu-Minggu lebih panjang, pukul 08.00-23.00 WIB. Last order 30 menit sebelum tutup ya kak! 🕗",
+        "Kami buka setiap hari kak! Weekday jam 8 pagi sampai 10 malam, weekend sampai jam 11 malam. Hari libur nasional tetap buka dengan jam weekend 😊",
+        "Buka tiap hari kak, jam 08.00-22.00 untuk Senin-Jumat dan 08.00-23.00 khusus weekend. Kalau mau nongkrong malam, jangan lupa last order 30 menit sebelum tutup ya!"
+      ]
+    },
+    {
+      "tag": "tanya_non_kopi",
+      "patterns": [
+        "ada menu non kopi ga",
+        "yg ga pake kopi apa aja min",
+        "aku ga bisa ngopi, ada apa aja",
+        "minuman selain kopi apa aja kak",
+        "non coffee nya apa aja",
+        "ga suka kopi nih, ada alternatif ga",
+        "menu buat yg ga minum kopi apa",
+        "ada yg non kafein ga",
+        "minuman tanpa kafein ada ndak",
+        "asam lambungku kambuh kalo ngopi, ada apa ya",
+        "selain kopi ada minuman apa",
+        "yang aman buat lambung apa min",
+        "menu non cofee ada ga",
+        "ada milkshake kan? aku ga ngopi soalnya",
+        "buat anak kecil ada minuman ga",
+        "ada jus atau smoothie gitu ga",
+        "minuman manis selain kopi apa aja"
+      ],
+      "responses": [
+        "Tenang kak, menu non-kopi kami banyak banget! Ada aneka milkshake (Oreo, Avocado, Pista, Pumpkin, Cotton Candy, Drumstick, Tiramisu), Mix Fruit Smoothie yang seger, sampai aneka pastry dan cake manis. Semua bebas kafein dan aman di lambung! 🥤",
+        "Buat yang gak ngopi, kami punya banyak pilihan kak: milkshake aneka rasa, smoothie buah segar, dan tentu air mineral. Cocok juga buat anak-anak. Mau saya rekomendasikan yang paling laris?",
+        "Aman kak! Selain kopi, tersedia aneka milkshake, Mix Fruit Smoothie, dan banyak dessert manis kayak Red Velvet atau Waffle Ice Cream. Lambung sensitif tetap bisa nongkrong asik di sini! 😊"
+      ]
+    },
+    {
+      "tag": "tanya_jenis_beans",
+      "patterns": [
+        "beansnya pakai arabika atau robusta",
+        "biji kopinya pakai apa",
+        "arabica atau robusta min",
+        "pake biji kopi apa kak",
+        "house blend atau single origin",
+        "jenis kopi yang dipakai apa",
+        "beans nya apa nih",
+        "kopinya arabika ya",
+        "robusta apa arabika ini",
+        "blend nya apa min",
+        "pake single origin ga",
+        "campuran bijinya apa aja",
+        "komposisi beans nya gimana",
+        "biji kopi nya jenis apa ya kak",
+        "arabika nya brp persen",
+        "kopi nya blend apa kak",
+        "bijinya arabika semua ta",
+        "ini kopinya jenis apa sih",
+        "beans apa yang dipake buat espresso",
+        "biji kpi nya pake apa"
+      ],
+      "responses": [
+        "Untuk menu espresso based (Americano, Latte, Cappuccino), kami menggunakan biji kopi House Blend spesial campuran 70% Arabica Gayo dan 30% Robusta Temanggung kak. Menghasilkan rasa yang balance, body tebal, dan gak terlalu asam!",
+        "Kopi kami pakai perpaduan House Blend Arabika dan Robusta dengan rasio 70:30 kak. Jadi aman di lambung tapi tetep dapet kick kafeinnya yang mantap! ☕"
+      ]
+    },
+    {
+      "tag": "tanya_roast_profile",
+      "patterns": [
+        "tingkat roast profile nya apa",
+        "roasting nya light atau dark",
+        "roast level nya apa min",
+        "biji kopinya di roasting tingkat apa kak",
+        "medium roast atau dark",
+        "roast profilenya gimana",
+        "sangrainya level apa",
+        "tingkat sangrai bijinya apa min",
+        "light roast ada ga",
+        "dark roast ya kopinya",
+        "profil roasting kalian apa",
+        "roastingannya medium ta",
+        "ini kopi roasting nya gmn",
+        "level roasting brp nih",
+        "rosting nya apa kak",
+        "kopinya disangrai gimana",
+        "roast nya tebel ga",
+        "suka yg dark roast nih, cocok ga di sini"
+      ],
+      "responses": [
+        "Biji kopi kami di-roast di tingkat Medium to Dark Roast kak, sengaja dipilih supaya aroma cokelat dan kacangnya keluar maksimal, serta cocok banget saat berpadu dengan susu segar.",
+        "Profil sangrai (roast level) kami ada di tingkat Medium to Dark kak. Cocok untuk penikmat kopi hitam maupun kopi susu kekinian! ✨"
+      ]
+    },
+    {
+      "tag": "tanya_origin_kopi",
+      "patterns": [
+        "biji kopinya dari mana",
+        "asal beans nya daerah mana min",
+        "origin kopinya dari mana aja kak",
+        "kopi lokal daerah mana nih",
+        "beans nya asli mana",
+        "kopinya impor apa lokal",
+        "asal kopinya mana ya",
+        "biji nya dari daerah mana",
+        "kopi gayo bukan nih",
+        "pake kopi aceh ya",
+        "originnya single apa campur",
+        "kopinya asli indonesia ga",
+        "dari petani lokal ga bijinya",
+        "beans lokal apa import kak",
+        "asalnya darimana sih kopinya",
+        "kopi temanggung ya ini",
+        "biji kopi nya dr mana kak",
+        "daerah asal beansnya mana aja"
+      ],
+      "responses": [
+        "Beans utama kami berasal dari dataran tinggi Aceh Gayo untuk Arabika-nya, dan daerah Temanggung Jawa Tengah untuk Robusta-nya kak. 100% komoditas lokal premium asli Indonesia! 🇮🇩",
+        "Kami pakai biji kopi lokal pilihan kak, yaitu Arabika Aceh Gayo dan Robusta Temanggung. Kualitasnya juara dunia!"
+      ]
+    },
+    {
+      "tag": "tanya_metode_seduh",
+      "patterns": [
+        "ada manual brew ga di sini",
+        "bisa pesen v60 ga min",
+        "apakah ada manual brew disini",
+        "apakah kamu tau v60",
+        "di sini ada pour over ga",
+        "metode seduhnya apa aja kak",
+        "seduh manual ada ndak",
+        "bisa bikin kopi tubruk ga",
+        "ada french press ga min",
+        "kalo aeropress ada ga",
+        "brewing method nya apa aja sih",
+        "kopinya diseduh pakai apa",
+        "ada manual brewing ga ya",
+        "v60 sama kalita ada ga kak",
+        "bisa request pour over ga",
+        "menyediakan manual brew ga",
+        "seduh nya pake mesin apa manual",
+        "ada opsi single origin manual brew ga",
+        "kopi tubruk bisa pesen ga min",
+        "cara nyeduh kopinya gimana di sini",
+        "japanese drip ada ga",
+        "ada moka pot ga kak",
+        "metode brewing yang tersedia apa aja",
+        "bisa minta diseduh v60 ga",
+        "manual brew pake beans apa min",
+        "vietnam drip ada ndak",
+        "nyediain cold brew ga",
+        "ada tubruk apa cuma espresso based aja"
+      ],
+      "responses": [
+        "Wah, kakak coffee enthusiast nih! 😍 Selain menu espresso based, kami juga melayani manual brew kok kak: tersedia V60, Kalita, French Press, dan Kopi Tubruk. Tinggal pilih beans favoritmu (Arabika Gayo atau Robusta Temanggung), nanti barista kami seduhkan segar. Mau coba yang mana kak? ☕",
+        "Bisa banget kak! Kami sedia beberapa metode manual brew: V60, French Press, sampai Kopi Tubruk klasik. Cocok buat yang pengen nikmatin karakter asli single origin kami. Mau saya bantu pilihkan metode yang pas sama selera kakak?",
+        "Untuk penikmat manual brew, kami punya opsi V60, Kalita, dan French Press ya kak. Diseduh langsung oleh barista pakai biji kopi lokal pilihan. Silakan kalau mau pesan, tinggal sebut metodenya! 🙌"
+      ]
+    },
+    {
+      "tag": "mau_pesan",
+      "patterns": [
+        "aku mau pesen dong",
+        "mau order dong min",
+        "aku mau milkshake avocado dong",
+        "pesen cappuccino satu ya",
+        "mau order espresso dong kak",
+        "aku pengen pesen kopi",
+        "bisa pesen sekarang ga",
+        "mau beli waffle dong",
+        "aku mau pesan latte",
+        "order oreo shake satu min",
+        "mau pesen red velvet dong",
+        "aku mau yang tadi itu deh",
+        "pesenin aku americano dong",
+        "mau checkout dong min",
+        "aku mau pesan buat dibawa pulang",
+        "mau take away dong kak",
+        "pengen pesen simple coffee",
+        "aku mau beli 2 milkshake",
+        "boleh pesen sekarang kan",
+        "mau pesen menu yang tadi",
+        "aku jadi mau pesen nih",
+        "pesan satu iced coffee latte ya",
+        "mau order buat dine in",
+        "aku mau pesen yg paling laris aja deh",
+        "gimana cara pesennya min",
+        "mau nambah pesanan dong",
+        "aku mau pesen tapi bingung pilih apa",
+        "pesenin yg rekomendasi kalian aja deh",
+        "mau americano dong",
+        "americano nya satu ya",
+        "pengen cappuccino deh",
+        "aku mau cappuccino",
+        "espresso nya satu ya",
+        "mau espresso dong",
+        "aku mau latte macchiato",
+        "pengen latte macchiato deh",
+        "mau black coffee dong",
+        "black coffee nya satu ya",
+        "pengen frappe deh",
+        "aku mau frappe",
+        "iced coffee latte nya satu ya",
+        "mau iced coffee latte dong",
+        "aku mau oreo shake",
+        "pengen oreo shake deh",
+        "mau avocado shake dong",
+        "avocado shake nya satu ya",
+        "pengen tiramisu milkshake deh",
+        "aku mau tiramisu milkshake",
+        "pumpkin shake nya satu ya",
+        "mau pumpkin shake dong",
+        "aku mau red velvet",
+        "pengen red velvet deh",
+        "mau waffle ice cream dong",
+        "waffle ice cream nya satu ya",
+        "pengen black forest deh",
+        "aku mau black forest",
+        "egg puff nya satu ya",
+        "mau egg puff dong",
+        "aku mau air mineral",
+        "pengen air mineral deh"
+      ],
+      "responses": [
+        "Siap kak, dengan senang hati! 😊 Boleh sebutkan menu dan jumlah yang mau dipesan? Nanti langsung kami catat dan proses ya. Kalau masih bingung, saya juga bisa bantu rekomendasikan menu terlaris kami kok!",
+        "Asik, siap melayani kak! Mau pesan menu apa dan berapa banyak? Untuk dine in atau take away? Sebutkan aja, nanti saya bantu proses pesanannya ya~",
+        "Boleh banget kak! Silakan sebutkan menu pilihannya, nanti saya konfirmasi pesanan dan totalnya. Kalau mau sekalian minta rekomendasi menu favorit juga bisa lho! 🙌"
+      ]
+    },
+    {
+      "tag": "out_of_scope_kasual",
+      "patterns": [
+        "kamu cowok apa cewek",
+        "kamu tahu chatgpt gak",
+        "siapa presiden indonesia",
+        "kapan kiamat",
+        "curhat dong min",
+        "lagi galau nih",
+        "kamu pintar ya",
+        "kamu robot ya",
+        "umur kamu berapa",
+        "kamu buatan siapa",
+        "besok hujan ga ya",
+        "ramalan cuaca dong",
+        "jodohku siapa min",
+        "pelajaran matematika dong",
+        "bantuin pr dong kak",
+        "1 tambah 1 berapa",
+        "kamu suka aku ga",
+        "nikah yuk min",
+        "gaji barista brp sih",
+        "saham apa yg bagus dibeli",
+        "crypto lagi naik ga",
+        "rekomendasi film dong",
+        "lagu galau apa yg enak",
+        "menurutmu bumi bulat apa datar",
+        "cerita lucu dong",
+        "kamu bisa bahasa inggris ga",
+        "timnas menang ga semalem",
+        "harga bensin naik lagi ya",
+        "kamu tinggal di mana"
+      ],
+      "responses": [
+        "Wah, kalau bahas itu kayaknya sambil ngopi seharian gak bakal kelar kak! Btw, kakak mau nanya menu atau harga kopi apa nih hari ini? 😊",
+        "Aku ini robot barista, kak. Pengetahuanku cuma seputar kopi dan menu kafe yang enak-enak. Kalau urusan masa depan atau politik, mending kita serahkan ke ahlinya aja ya! ☕"
+      ]
+    },
+    {
+      "tag": "user_keras_kepala",
+      "patterns": [
+        "jawab dong",
+        "kok gak nyambung",
+        "ah gak seru",
+        "plis jawab",
+        "tapi aku maunya tahu itu",
+        "cepetan jawab",
+        "jawab aja napa",
+        "kok gitu doang jawabnya",
+        "masa gitu doang",
+        "yaelah gitu aja ga bisa",
+        "payah ah",
+        "bot bego",
+        "ga guna banget sih",
+        "jawabanmu ngaco",
+        "kamu error ya",
+        "aku serius nanya",
+        "jangan ngeles dong",
+        "pokoknya jawab",
+        "ayo dong jawab yg bener",
+        "kok muter2 sih jawabnya",
+        "gak mau tau, jawab",
+        "hadeh percuma nanya",
+        "gitu doang ga becus",
+        "males banget jawabnya",
+        "kamu ga ngerti apa gimana sih"
+      ],
+      "responses": [
+        "Hehe, maaf ya kak kalau jawabanku belum memuaskan. Sebagai asisten digital kafe, tugasku difokuskan untuk bantu kakak cek menu, harga, dan info kafe di sini. Semoga maklum ya kak! Ada menu yang mau ditanyakan?",
+        "Waduh, jangan galak-galak dong kak, nanti kopinya jadi pahit lho! 😂 Aku beneran cuma bisa bantu seputar info kafe ini aja kok. Yuk, bahas menu terlaris kita aja!"
+      ]
+    },
+    {
+      "tag": "konfirmasi_pesanan_ya",
+      "patterns": [
+        "iya aku mau",
+        "proses aja min",
+        "oke boleh",
+        "iya jadi pesen itu aja",
+        "lanjut aja min",
+        "gas order itu aja",
+        "yaudah pesen itu deh",
+        "oke deh order itu ya",
+        "mantap gas pesenin",
+        "siap itu aja yang aku mau",
+        "boleh tuh order ya",
+        "iya bener, proses aja",
+        "ok fix itu aja",
+        "udah itu aja deh min",
+        "yoi gas pesen",
+        "baik, aku ambil itu deh",
+        "setuju, proses pesenannya",
+        "sip lanjutin aja min",
+        "iya beneran mau itu kok",
+        "oke deal, order ya min",
+        "gaskeun order dong",
+        "fix itu aja yang aku pesen"
+      ],
+      "responses": [
+        "Siap kak, pesanannya langsung kami proses ya! Mohon ditunggu sebentar 😊",
+        "Baik kak, oke banget! Pesanan segera kami siapkan ya.",
+        "Sip, noted kak! Pesanannya sedang diproses, ditunggu sebentar ya."
+      ]
+    },
+    {
+      "tag": "tanya_area_outdoor",
+      "patterns": [
+        "ada tempat outdoor ga",
+        "kalo di luar boleh duduk ga",
+        "outdoor seatingnya gimana",
+        "bisa duduk di luar ga kak",
+        "tempat outdoornya kayak gimana",
+        "outdoor areanya luas ga",
+        "duduk di luar bisa ga min",
+        "ada rooftop atau outdoor ga",
+        "outdoor buka sampe jam berapa",
+        "tempat outdoor nya teduh ga",
+        "spot outdoor buat nongkrong ada ga",
+        "duduk di taman bisa ga kak",
+        "outdoor space nya gimana",
+        "ada halaman buat duduk duduk ga",
+        "kalo mau di luar ruangan bisa ga",
+        "ada teras buat duduk ga",
+        "seating outdoor tersedia ga min",
+        "boleh nongkrong di luar ga kak",
+        "area outdoor ada ga min"
+      ],
+      "responses": [
+        "Ada kak! Kami punya area outdoor buat yang mau nongkrong santai di luar ruangan 😊",
+        "Punya dong! Selain indoor ber-AC, tersedia juga area outdoor buat kamu yang suka suasana lebih terbuka.",
+        "Tenang kak, area outdoor kami tersedia dan bisa dipakai buat duduk-duduk santai kok!"
+      ]
+    },
+    {
+      "tag": "tanya_request_lagu",
+      "patterns": [
+        "bisa request lagu ga",
+        "boleh minta lagu diputer ga",
+        "request lagu ke siapa ya",
+        "mau denger lagu tertentu bisa ga",
+        "lagu yang diputer bisa direquest ga",
+        "musiknya bisa diganti ga",
+        "pengen dengerin lagu kesukaan bisa ga",
+        "request musik dimana ya",
+        "bisa minta puterin lagu ga min",
+        "playlist nya bisa direquest ga",
+        "mau usul lagu boleh ga kak",
+        "gimana caranya request lagu",
+        "request lagu ke kasir bisa ga",
+        "musik disini bisa dipilih ga",
+        "boleh minta ganti lagu ga",
+        "lagu yang lagi diputer bisa dignti ga"
+      ],
+      "responses": [
+        "Untuk request lagu, coba tanyakan langsung ke kasir ya kak, siapa tau bisa dibantu 😊",
+        "Soal request lagu, langsung aja tanya ke kasir kak, mereka yang pegang kendali musiknya!",
+        "Boleh dicoba tanya ke kasir langsung ya kak, biar lebih pasti soal request lagunya 🎵"
+      ]
+    },
+    {
+      "tag": "tanya_biaya_parkir",
+      "patterns": [
+        "parkir bayar ga",
+        "ada biaya parkir ga",
+        "parkirnya gratis ga",
+        "parkir free ga min",
+        "kena charge parkir ga",
+        "parkir motor bayar ga",
+        "parkir mobil kena biaya ga",
+        "berapa biaya parkirnya",
+        "parkir disini gimana biayanya",
+        "ada tarif parkir ga",
+        "parkirnya berbayar ya",
+        "titip motor kena biaya ga",
+        "parkir mobil gratis ga kak",
+        "bayar parkir berapa min",
+        "parkir disini free apa bayar"
+      ],
+      "responses": [
+        "Parkir di sini gratis kak, nggak ada biaya tambahan buat motor maupun mobil 😊",
+        "Free parkir kok kak, jadi nggak perlu khawatir soal biaya parkir ya!",
+        "Gratis kak, baik motor maupun mobil nggak dikenakan biaya parkir di sini."
+      ]
+    },
+    {
+      "tag": "tanya_lokasi_wc",
+      "patterns": [
+        "wc dimana ya",
+        "toilet sebelah mana kak",
+        "wc nya di sebelah mana",
+        "kamar mandi dimana min",
+        "toiletnya dimana ya",
+        "mau ke wc lewat mana",
+        "letak toilet dimana",
+        "kamar kecil dimana kak",
+        "wc di lantai berapa",
+        "toilet ada di lantai atas apa bawah",
+        "restroom dimana ya",
+        "numpang ke toilet dimana ya",
+        "arah ke wc kemana kak",
+        "wc cowok dimana",
+        "toilet cewek sebelah mana"
+      ],
+      "responses": [
+        "Toilet ada di lantai 1 dekat kasir ya kak, dan ada juga di lantai 2 tepat di samping mushola 😊",
+        "WC-nya ada dua kak: lantai 1 di dekat area kasir, atau lantai 2 di samping mushola. Silakan!",
+        "Kamar mandi tersedia di lantai 1 (dekat kasir) dan lantai 2 (samping mushola) ya kak!"
+      ]
+    },
+    {
+      "tag": "batal_ubah_pesanan",
+      "patterns": [
+        "mau batalin pesanan bisa ga",
+        "pesananku bisa dicancel ga",
+        "batalin pesanan yang tadi dong",
+        "eh mau ganti pesanan bisa ga",
+        "pesanannya bisa diubah ga min",
+        "cancel order bisa ga kak",
+        "aku salah pesan gimana ini",
+        "mau tuker menu yang udah dipesan bisa ga",
+        "kalo udah pesen bisa dibatalin ga",
+        "ganti pesanan gimana caranya",
+        "pesanan tadi ga jadi deh",
+        "bisa cancel ga pesanan yang udah masuk",
+        "ubah jumlah pesanan yang tadi bisa ga",
+        "menu yang kupesan mau kuganti",
+        "gimana cara batalin order"
+      ],
+      "responses": [
+        "Mohon maaf kak, pesanan yang sudah masuk tidak bisa dibatalkan lewat chatbot ya 🙏 Kalau ada kebutuhan mengubah pesanan, silakan langsung hubungi pegawai kami di kasir untuk dibantu.",
+        "Waduh, pesanan yang sudah diproses tidak bisa dibatalkan dari sini kak 🙏 Untuk perubahan pesanan, langsung sampaikan ke pegawai/kasir kami ya, nanti dibantu di sana.",
+        "Maaf ya kak, pembatalan pesanan yang sudah masuk belum bisa dilakukan lewat chatbot. Silakan bicara langsung dengan staf kami di kasir kalau mau mengubah pesanan 😊"
+      ]
+    },
+    {
+      "tag": "tanya_metode_bayar",
+      "patterns": [
+        "bisa bayar pake debit ga",
+        "terima kartu kredit ga kak",
+        "bayarnya bisa pake apa aja",
+        "metode pembayarannya apa aja min",
+        "bisa gesek kartu ga",
+        "pembayaran pake atm bisa ga",
+        "bayar pake kartu bisa ga",
+        "cc bisa ga min",
+        "bisa transfer bank ga",
+        "pake debit bca bisa ga",
+        "payment nya apa aja",
+        "bayar pake dana atau ovo bisa ga",
+        "gopay bisa ga kak",
+        "cara bayarnya gimana aja",
+        "opsi pembayaran apa aja yang tersedia"
+      ],
+      "responses": [
+        "Untuk saat ini kami baru menerima pembayaran Cash dan QRIS ya kak 😊 Kabar baiknya, QRIS bisa dipakai dari hampir semua aplikasi (GoPay, OVO, Dana, m-banking, dll)!",
+        "Pembayaran yang tersedia saat ini: Cash dan QRIS kak. Debit dan kartu kredit belum bisa untuk sekarang ya 🙏 Tapi QRIS bisa discan dari aplikasi bank atau e-wallet apa pun kok!",
+        "Saat ini baru bisa Cash atau QRIS ya kak. Kalau kakak pakai GoPay/OVO/Dana/m-banking, semua bisa lewat scan QRIS kami 😊"
+      ]
+    },
+    {
+      "tag": "tanya_delivery",
+      "patterns": [
+        "bisa delivery ga",
+        "ada layanan antar ga min",
+        "bisa dianter ke rumah ga",
+        "ada di gofood ga",
+        "shopeefood ada ga kak",
+        "bisa pesen online dari rumah ga",
+        "grabfood ada ga",
+        "delivery order bisa ga",
+        "kalo mau dianterin gimana",
+        "bisa kirim ke alamat ga",
+        "pesan antar tersedia ga",
+        "ada ojol yang bisa jemput pesanan ga",
+        "order dari rumah bisa ga min",
+        "layanan delivery nya gimana"
+      ],
+      "responses": [
+        "Untuk delivery, bisa dicek di GoFood atau ShopeeFood kami ya kak! 🛵 Menu lengkap kami tersedia di sana.",
+        "Bisa kak! Silakan order lewat GoFood/ShopeeFood kami ya, tinggal cari nama kafe kami di aplikasinya 😊",
+        "Kami tersedia di GoFood dan ShopeeFood kak, silakan dicek di sana untuk pesan antar ya! 🛵"
+      ]
+    },
+    {
+      "tag": "tanya_takeaway",
+      "patterns": [
+        "bisa dibungkus ga",
+        "take away bisa ga kak",
+        "boleh dibawa pulang ga",
+        "kalo mau takeaway gimana",
+        "pesen buat dibawa pulang bisa ga",
+        "bungkus aja bisa kan",
+        "to go bisa ga min",
+        "ga makan di tempat, dibungkus ya",
+        "takeaway caranya gimana",
+        "beli buat dibawa bisa ga",
+        "mau bungkus beberapa menu bisa ga",
+        "kalo ga dine in bisa ga"
+      ],
+      "responses": [
+        "Bisa dong kak! Cara pesannya sama persis seperti dine in, tinggal bilang mau dibungkus/takeaway saat pesanannya diambil ya 😊",
+        "Takeaway bisa banget kak! Pesan seperti biasa aja lewat sini, nanti tinggal infokan ke staf kalau mau dibawa pulang.",
+        "Boleh kak! Proses pesannya sama seperti biasa, cukup sampaikan ke pegawai kami kalau pesanannya untuk dibawa pulang ya 😊"
+      ]
+    },
+    {
+      "tag": "tanya_promo",
+      "patterns": [
+        "ada promo ga min",
+        "lagi ada diskon ga",
+        "promo hari ini apa",
+        "ada potongan harga ga kak",
+        "diskon apa aja yang tersedia",
+        "promo buy 1 get 1 ada ga",
+        "lagi ada penawaran spesial ga",
+        "voucher diskon ada ga",
+        "kode promo apa yang bisa dipake",
+        "ada harga spesial ga hari ini",
+        "promonya apa aja sih",
+        "diskon member ada ga",
+        "kapan ada promo kak"
+      ],
+      "responses": [
+        "Nantikan aja ya kak promo menarik dari kami! 🎉 Biar nggak ketinggalan, silakan follow Instagram kami di @cafekita.id — info promo biasanya diumumkan di sana 😊",
+        "Untuk promo, pantengin terus Instagram kami ya kak @cafekita.id! Di sana biasa ada info diskon dan penawaran spesial dari kami 🎉",
+        "Promo menarik akan hadir kak, ditunggu ya! Jangan lupa follow @cafekita.id di Instagram, semua info promo kami umumkan lewat sana 😊"
+      ]
+    },
+    {
+      "tag": "komplain",
+      "patterns": [
+        "pesananku salah nih",
+        "kok lama banget pesanannya",
+        "kopiku kurang enak",
+        "menu yang dateng beda sama yang kupesan",
+        "pesanan belum dateng dateng",
+        "makanannya dingin nih kak",
+        "kok gelasnya kotor ya",
+        "rasanya aneh min",
+        "pelayanannya lama ya",
+        "aku mau komplain",
+        "ada yang salah sama pesananku",
+        "kopinya tumpah pas dianter",
+        "porsinya kok dikit banget",
+        "mejanya kotor belum dibersihin",
+        "ini bukan yang aku pesen"
+      ],
+      "responses": [
+        "Mohon maaf banget atas ketidaknyamanannya kak 🙏 Silakan langsung sampaikan ke pegawai kami di kasir ya, pasti segera dibantu dan dibereskan.",
+        "Waduh, maaf ya kak 🙏 Tolong infokan langsung ke staf kami yang bertugas supaya bisa langsung ditindaklanjuti saat itu juga.",
+        "Maaf atas kejadiannya kak 🙏 Keluhan kakak penting buat kami — silakan sampaikan ke pegawai terdekat atau kasir, mereka siap bantu menyelesaikannya segera."
+      ]
+    },
+    {
+      "tag": "tanya_reservasi",
+      "patterns": [
+        "bisa reservasi tempat ga",
+        "mau booking meja bisa ga",
+        "reserve buat 10 orang bisa ga",
+        "bisa book tempat buat acara ga",
+        "mau ngadain acara di sini bisa ga",
+        "sewa tempat buat gathering bisa ga",
+        "booking ruangan bisa ga min",
+        "reservasi buat ulang tahun bisa ga",
+        "kalo rombongan harus reservasi dulu ga",
+        "bisa pesan tempat buat besok ga",
+        "private room bisa dibooking ga",
+        "mau bikin acara komunitas di sini gimana"
+      ],
+      "responses": [
+        "Untuk reservasi tempat atau acara, silakan langsung bicara dengan kasir kami ya kak 😊 Chatbot ini khusus untuk pemesanan menu makanan dan minuman.",
+        "Wah, boleh banget kak, tapi urusannya langsung ke kasir ya! Aku di sini fokusnya bantu pesan menu aja 😊 Kasir kami siap bantu soal reservasi tempat.",
+        "Silakan sampaikan ke kasir langsung ya kak untuk urusan booking tempat/acara — mereka yang pegang jadwalnya. Kalau soal pesan menu, aku siap bantu! 😊"
+      ]
+    }
+  ]
+}
