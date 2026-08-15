@@ -1,0 +1,415 @@
+[
+  {
+    "id": 1,
+    "name": "Chocolate and Vanila Combo",
+    "price": 48000,
+    "category": "non_kopi",
+    "description": "Milkshake perpaduan cokelat dan vanila, manisnya seimbang ya kak 😊"
+  },
+  {
+    "id": 2,
+    "name": "Avocado Shake",
+    "price": 38000,
+    "category": "non_kopi",
+    "description": "Milkshake alpukat segar yang creamy, favorit banyak pelanggan kak 😊"
+  },
+  {
+    "id": 4,
+    "name": "Drumstick Milkshake",
+    "price": 36000,
+    "category": "non_kopi",
+    "description": "Milkshake bertema es krim drumstick, manis dengan sentuhan kacang kak 😊"
+  },
+  {
+    "id": 5,
+    "name": "Pumpkin Shake",
+    "price": 38000,
+    "category": "non_kopi",
+    "description": "Milkshake labu yang unik, creamy dengan rasa khas yang hangat kak 😊"
+  },
+  {
+    "id": 6,
+    "name": "Malted Chocolate",
+    "price": 38000,
+    "category": "non_kopi",
+    "description": "Cokelat malt yang creamy dan kaya rasa, cocok buat pencinta cokelat kak 😊"
+  },
+  {
+    "id": 7,
+    "name": "Oreo Shake",
+    "price": 36000,
+    "category": "non_kopi",
+    "description": "Milkshake dengan remahan biskuit Oreo, manis dan bertekstur kak 😊"
+  },
+  {
+    "id": 8,
+    "name": "Pista Shake",
+    "price": 36000,
+    "category": "non_kopi",
+    "description": "Milkshake pistachio dengan rasa kacang yang khas dan lembut ya kak 😊"
+  },
+  {
+    "id": 9,
+    "name": "Mix Fruit Smothie",
+    "price": 38000,
+    "category": "non_kopi",
+    "description": "Smoothie campuran buah segar, sehat dan menyegarkan kak 😊"
+  },
+  {
+    "id": 10,
+    "name": "Tiramisu Milkshake",
+    "price": 48000,
+    "category": "non_kopi",
+    "description": "Milkshake rasa tiramisu, perpaduan kopi-cokelat yang lembut kak 😊"
+  },
+  {
+    "id": 11,
+    "name": "Banana Cream treat",
+    "price": 38000,
+    "category": "non_kopi",
+    "description": "Minuman krim pisang yang manis dan lembut, cocok buat semua umur kak 😊"
+  },
+  {
+    "id": 12,
+    "name": "Cotton candy shake",
+    "price": 38000,
+    "category": "non_kopi",
+    "description": "Milkshake rasa gulali yang manis dan berwarna ceria ya kak 😊"
+  },
+  {
+    "id": 13,
+    "name": "Cranberry Orange",
+    "price": 38000,
+    "category": "non_kopi",
+    "description": "Minuman segar perpaduan cranberry dan jeruk, asam manis menyegarkan kak 😊"
+  },
+  {
+    "id": 15,
+    "name": "Cheery Vanila",
+    "price": 48000,
+    "category": "non_kopi",
+    "description": "Minuman vanila dengan sentuhan ceri yang manis dan wangi ya kak 😊"
+  },
+  {
+    "id": 16,
+    "name": "Peanut Vanila",
+    "price": 48000,
+    "category": "non_kopi",
+    "description": "Perpaduan rasa kacang dan vanila yang creamy dan gurih-manis kak 😊"
+  },
+  {
+    "id": 19,
+    "name": "Red Velvet",
+    "price": 38000,
+    "category": "makanan",
+    "description": "Cake red velvet lembut dengan cream cheese yang manis legit kak 😊"
+  },
+  {
+    "id": 20,
+    "name": "Strawberry Traimisu",
+    "price": 35000,
+    "category": "makanan",
+    "description": "Tiramisu dengan sentuhan stroberi, manis-asam dan lembut ya kak 😊"
+  },
+  {
+    "id": 21,
+    "name": "Black Forest",
+    "price": 36000,
+    "category": "makanan",
+    "description": "Cake cokelat klasik dengan ceri dan krim, favorit sepanjang masa kak 😊"
+  },
+  {
+    "id": 22,
+    "name": "Black Tie Mose",
+    "price": 36000,
+    "category": "makanan",
+    "description": "Mousse cokelat pekat yang lembut meleleh di mulut ya kak 😊"
+  },
+  {
+    "id": 23,
+    "name": "Honey Slice",
+    "price": 36000,
+    "category": "makanan",
+    "description": "Kue lapis dengan sentuhan madu yang manis alami kak 😊"
+  },
+  {
+    "id": 24,
+    "name": "Walnut Pastry",
+    "price": 38000,
+    "category": "makanan",
+    "description": "Pastry renyah dengan isian kacang walnut yang gurih ya kak 😊"
+  },
+  {
+    "id": 25,
+    "name": "Mango cream Bluree",
+    "price": 36000,
+    "category": "makanan",
+    "description": "Dessert krim mangga ala brulee, manis segar dengan topping karamel kak 😊"
+  },
+  {
+    "id": 26,
+    "name": "Maxres Special",
+    "price": 36000,
+    "category": "makanan",
+    "description": "Menu spesial andalan kami, racikan istimewa dari dapur Cafebot kak 😊"
+  },
+  {
+    "id": 28,
+    "name": "Strawberry Basque",
+    "price": 36000,
+    "category": "makanan",
+    "description": "Basque cheesecake dengan stroberi, permukaan karamel dan tekstur lembut kak 😊"
+  },
+  {
+    "id": 29,
+    "name": "Vanila Layer",
+    "price": 36000,
+    "category": "makanan",
+    "description": "Kue lapis vanila yang lembut dan manisnya pas ya kak 😊"
+  },
+  {
+    "id": 30,
+    "name": "Fruit & Cheese cerame",
+    "price": 36000,
+    "category": "makanan",
+    "description": "Perpaduan buah segar dan keju krim yang gurih-manis kak 😊"
+  },
+  {
+    "id": 32,
+    "name": "Macrons",
+    "price": 36000,
+    "category": "makanan",
+    "description": "Macaron warna-warni, kue almond kecil yang renyah di luar lembut di dalam kak 😊"
+  },
+  {
+    "id": 33,
+    "name": "Waffel Ice-cream",
+    "price": 38000,
+    "category": "makanan",
+    "description": "Waffle hangat dengan topping es krim yang lumer, manis dan renyah kak 😊"
+  },
+  {
+    "id": 34,
+    "name": "Waffel Choco",
+    "price": 38000,
+    "category": "makanan",
+    "description": "Waffle dengan saus cokelat melimpah, cocok buat pencinta cokelat kak 😊"
+  },
+  {
+    "id": 35,
+    "name": "Tanuki",
+    "price": 29000,
+    "category": "makanan",
+    "description": "Camilan spesial khas kami dengan cita rasa unik, wajib coba kak 😊"
+  },
+  {
+    "id": 36,
+    "name": "Tomato Cheese",
+    "price": 35000,
+    "category": "makanan",
+    "description": "Pastry gurih dengan tomat dan keju, pas buat yang suka rasa savory kak 😊"
+  },
+  {
+    "id": 37,
+    "name": "Blueberry Puff",
+    "price": 35000,
+    "category": "makanan",
+    "description": "Puff renyah dengan isian blueberry yang manis-asam segar ya kak 😊"
+  },
+  {
+    "id": 38,
+    "name": "Char Sui",
+    "price": 35000,
+    "category": "makanan",
+    "description": "Pastry dengan isian char siu (daging bumbu manis khas oriental) kak 😊"
+  },
+  {
+    "id": 39,
+    "name": "Cinnimon Orange rolls",
+    "price": 35000,
+    "category": "makanan",
+    "description": "Roti gulung kayu manis dengan aroma jeruk yang wangi dan manis kak 😊"
+  },
+  {
+    "id": 40,
+    "name": "Easy Spinach",
+    "price": 35000,
+    "category": "makanan",
+    "description": "Pastry gurih dengan isian bayam, pilihan yang lebih ringan dan sehat kak 😊"
+  },
+  {
+    "id": 41,
+    "name": "French Pastery",
+    "price": 35000,
+    "category": "makanan",
+    "description": "Pastry ala Prancis yang renyah berlapis dan buttery ya kak 😊"
+  },
+  {
+    "id": 42,
+    "name": "Beef Wellington",
+    "price": 35000,
+    "category": "makanan",
+    "description": "Pastry premium dengan isian daging sapi, gurih dan mewah kak 😊"
+  },
+  {
+    "id": 43,
+    "name": "Keto Puff",
+    "price": 36000,
+    "category": "makanan",
+    "description": "Puff ramah diet keto, rendah karbo tapi tetap enak ya kak 😊"
+  },
+  {
+    "id": 44,
+    "name": "Nutella Puff",
+    "price": 36000,
+    "category": "makanan",
+    "description": "Puff renyah dengan isian Nutella yang cokelatnya melimpah kak 😊"
+  },
+  {
+    "id": 45,
+    "name": "Asparagus Puff",
+    "price": 36000,
+    "category": "makanan",
+    "description": "Puff gurih dengan isian asparagus, camilan savory favorit kami kak 😊"
+  },
+  {
+    "id": 46,
+    "name": "Egg Puff",
+    "price": 36000,
+    "category": "makanan",
+    "description": "Puff dengan isian telur yang lembut dan gurih ya kak 😊"
+  },
+  {
+    "id": 47,
+    "name": "Rough Puff",
+    "price": 36000,
+    "category": "makanan",
+    "description": "Pastry puff klasik yang renyah berlapis, cocok nemenin kopi kak 😊"
+  },
+  {
+    "id": 48,
+    "name": "Simple Cherry Puff",
+    "price": 36000,
+    "category": "makanan",
+    "description": "Puff dengan isian ceri manis yang segar ya kak 😊"
+  },
+  {
+    "id": 49,
+    "name": "Tart Social",
+    "price": 35000,
+    "category": "makanan",
+    "description": "Tart manis dengan topping cantik, pas buat teman ngobrol santai kak 😊"
+  },
+  {
+    "id": 50,
+    "name": "Blaeter  tertei Puff",
+    "price": 35000,
+    "category": "makanan",
+    "description": "Puff spesial berlapis renyah khas kami, cocok buat pencinta pastry kak 😊"
+  },
+  {
+    "id": 51,
+    "name": "Simple Coffee",
+    "price": 29000,
+    "category": "kopi",
+    "description": "Kopi hitam sederhana seduhan house blend kami, pas buat nemenin santai kak 😊"
+  },
+  {
+    "id": 52,
+    "name": "Cappuchino",
+    "price": 36000,
+    "category": "kopi",
+    "description": "Espresso dengan susu steam dan foam tebal yang creamy ya kak 😊"
+  },
+  {
+    "id": 53,
+    "name": "Americano",
+    "price": 36000,
+    "category": "kopi",
+    "description": "Espresso yang ditambah air panas, rasanya lebih ringan dari espresso murni ya kak 😊"
+  },
+  {
+    "id": 54,
+    "name": "Au Laite",
+    "price": 36000,
+    "category": "kopi",
+    "description": "Kopi dengan campuran susu panas, lembut dan tidak terlalu strong kak 😊"
+  },
+  {
+    "id": 55,
+    "name": "Au Laite Cappucchino",
+    "price": 36000,
+    "category": "kopi",
+    "description": "Perpaduan gaya au lait dan cappuccino, susunya lebih terasa creamy ya kak 😊"
+  },
+  {
+    "id": 56,
+    "name": "Chans Espresso",
+    "price": 36000,
+    "category": "kopi",
+    "description": "Espresso spesial racikan barista kami, shot kopi murni yang pekat kak 😊"
+  },
+  {
+    "id": 57,
+    "name": "Con Panna",
+    "price": 36000,
+    "category": "kopi",
+    "description": "Espresso yang di-topping whipped cream lembut di atasnya ya kak 😊"
+  },
+  {
+    "id": 58,
+    "name": "Black Coffee",
+    "price": 36000,
+    "category": "kopi",
+    "description": "Kopi hitam murni tanpa susu, cocok buat penikmat rasa kopi asli kak 😊"
+  },
+  {
+    "id": 59,
+    "name": "Espresso",
+    "price": 36000,
+    "category": "kopi",
+    "description": "Shot kopi murni yang pekat dan strong, dasar dari semua menu kopi kami kak 😊"
+  },
+  {
+    "id": 60,
+    "name": "Frappe",
+    "price": 35000,
+    "category": "kopi",
+    "description": "Kopi blend dingin dengan es, teksturnya creamy dan menyegarkan ya kak 😊"
+  },
+  {
+    "id": 61,
+    "name": "French Coffee",
+    "price": 35000,
+    "category": "kopi",
+    "description": "Kopi ala French dengan sentuhan krim, terasa halus dan wangi kak 😊"
+  },
+  {
+    "id": 62,
+    "name": "Iced Coffee Late",
+    "price": 35000,
+    "category": "kopi",
+    "description": "Latte dingin dengan es, kombinasi espresso dan susu yang seger kak 😊"
+  },
+  {
+    "id": 64,
+    "name": "Latte Macchiato",
+    "price": 35000,
+    "category": "kopi",
+    "description": "Susu steam yang ditandai (macchiato) dengan shot espresso di atasnya ya kak 😊"
+  },
+  {
+    "id": 65,
+    "name": "Wainans Choco Coffee",
+    "price": 36000,
+    "category": "kopi",
+    "description": "Kopi spesial kami dengan sentuhan cokelat, manis dan pas buat yang suka choco kak 😊"
+  },
+  {
+    "id": 66,
+    "name": "Air Mineral",
+    "price": 10000,
+    "category": "non_kopi",
+    "description": "Air mineral kemasan buat nemenin pesananmu, biar tetap segar ya kak 😊"
+  }
+]
